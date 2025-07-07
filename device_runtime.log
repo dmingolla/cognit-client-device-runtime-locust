@@ -1,0 +1,595 @@
+[2025-07-07 10:51:57,634] [DEBUG] [_cognit_frontend_client.py::252] Requesting token for oneadmin
+[2025-07-07 10:51:57,643] [DEBUG] [_device_runtime_state_machine.py::118] Token: EtEBCmcKCG9uZWFkbWluCghwYXNzd29yZAoQYjUzZDlkNDhhODBjZjA0ZRgDIgkKBwgKEgMYgAgiCgoICIEIEgMYgggyJgokCgIIGxIGCAUSAggFGhYKBAoCCAUKCAoGIK24s8MGCgQaAggAEiQIABIg2ERu0dDStIdNrz9AS5PeAOi3dBAHdseGvFiw4ftpHm4aQHrq74sxxuZkx3drTFDQF7VKWNNOQ8WvM1bD4ma8WUmlo-WvNgYyZZr3ikFNvu_BVnVDpc60rr-oJqYCm7FvUAkiIgogxNE0oHLM8r0KSgMYxg1whf3TTPtDDhwb5P2pWS5JOjM=
+[2025-07-07 10:51:57,643] [INFO] [device_runtime.py::83] DeviceRuntime initialized
+[2025-07-07 10:51:57,643] [DEBUG] [device_runtime.py::187] Function added to the queue
+[2025-07-07 10:51:57,644] [INFO] [_sm_handler.py::43] Current state: init
+[2025-07-07 10:51:57,645] [DEBUG] [_device_runtime_state_machine.py::128] SM: Setting sm.token to cfc token
+[2025-07-07 10:51:57,645] [DEBUG] [_device_runtime_state_machine.py::135] Uploading requirements: FLAVOUR='Nature' MAX_LATENCY=None MAX_FUNCTION_EXECUTION_TIME=None MIN_ENERGY_RENEWABLE_USAGE=None GEOLOCATION=Geolocation(latitude=43.05, longitude=-2.53)
+[2025-07-07 10:51:57,645] [DEBUG] [_cognit_frontend_client.py::80] Max latency is not activated, setting is_max_latency_activated to False
+[2025-07-07 10:51:57,646] [DEBUG] [_cognit_frontend_client.py::91] Application requirements do not exist, creating them at http://localhost:1338/v1/app_requirements
+[2025-07-07 10:51:57,702] [INFO] [_sm_handler.py::43] Current state: send_init_request
+[2025-07-07 10:51:57,702] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 10:51:57,702] [DEBUG] [_device_runtime_state_machine.py::253] Requirements uploaded: True
+[2025-07-07 10:51:57,703] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 10:51:57,703] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 10:51:57,703] [DEBUG] [_device_runtime_state_machine.py::253] Requirements uploaded: True
+[2025-07-07 10:51:57,704] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 10:51:57,704] [DEBUG] [_device_runtime_state_machine.py::163] Getting Edge Cluster address from CFC
+[2025-07-07 10:51:57,717] [DEBUG] [_cognit_frontend_client.py::151] Response from get_ECFE: [{'ID': 0, 'NAME': 'default', 'HOSTS': [1, 2], 'DATASTORES': [0, 1, 2], 'VNETS': [0, 4, 5], 'TEMPLATE': {'EDGE_CLUSTER_FRONTEND': 'http://172.21.0.1:1339', 'GEOLOCATION': '40.4168,-3.7038'}}]
+[2025-07-07 10:51:57,717] [DEBUG] [_cognit_frontend_client.py::155] Item in response: {'ID': 0, 'NAME': 'default', 'HOSTS': [1, 2], 'DATASTORES': [0, 1, 2], 'VNETS': [0, 4, 5], 'TEMPLATE': {'EDGE_CLUSTER_FRONTEND': 'http://172.21.0.1:1339', 'GEOLOCATION': '40.4168,-3.7038'}}
+[2025-07-07 10:51:57,718] [DEBUG] [_cognit_frontend_client.py::176] Edge Cluster Frontend Engine: http://172.21.0.1:1339
+[2025-07-07 10:51:57,718] [DEBUG] [_cognit_frontend_client.py::238] Max latency is not activated, returning first Edge Cluster Frontend Engine: http://172.21.0.1:1339
+[2025-07-07 10:51:57,769] [INFO] [_sm_handler.py::43] Current state: get_ecf_address
+[2025-07-07 10:51:57,769] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 10:51:57,769] [DEBUG] [_device_runtime_state_machine.py::258] Number of attempts getting Edge Cluster address: 1
+[2025-07-07 10:51:57,769] [DEBUG] [_device_runtime_state_machine.py::238] Edge Cluster Frontend connected: True
+[2025-07-07 10:51:57,770] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 10:51:57,770] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 10:51:57,770] [DEBUG] [_device_runtime_state_machine.py::238] Edge Cluster Frontend connected: True
+[2025-07-07 10:51:57,770] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 10:51:57,771] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 10:51:57,771] [DEBUG] [_cognit_frontend_client.py::378] Uploading function: LANG=<FunctionLanguage.PY: 'PY'> FC='gAWVrwIAAAAAAACMF2Nsb3VkcGlja2xlLmNsb3VkcGlja2xllIwOX21ha2VfZnVuY3Rpb26Uk5QoaACMDV9idWlsdGluX3R5cGWUk5SMCENvZGVUeXBllIWUUpQoSwFLAEsASwhLBktDQ3BkAWQAbAB9AWQBZABsAX0CZAFkAGwCfQN8AaAAoQB8ABcAfQRkAX0FfAGgAKEAfARrAHI2fAOgAqEAfQZ0A2QCgwFEAF0NfQd8BXwCoAR8BmQDEwB8BhcAoQE3AH0FcSJ8AaAAoQB8BGsAcxp8BVMAlChOSwBN6ANLAnSUKIwEdGltZZSMBG1hdGiUjAZyYW5kb22UjAVyYW5nZZSMBHNxcnSUdJQojAhkdXJhdGlvbpRoCmgLaAyMCGVuZF90aW1llIwGcmVzdWx0lIwBeJSMAV+UdJSMOC92YXIvbGliL29uZS9DT0dOSVQvY29nbml0LWNsaWVudC9leGFtcGxlcy9zdHJlc3NfY3B1LnB5lIwGc3RyZXNzlEsHQxYIAQgBCAEMAgQBDAIIAQwBGAEM/QQElCkpdJRSlH2UTk5OdJRSlIwcY2xvdWRwaWNrbGUuY2xvdWRwaWNrbGVfZmFzdJSMEl9mdW5jdGlvbl9zZXRzdGF0ZZSTlGgdfZR9lCiMCF9fbmFtZV9flGgXjAxfX3F1YWxuYW1lX1+UaBeMD19fYW5ub3RhdGlvbnNfX5R9lGgQjAhidWlsdGluc5SMA2ludJSTlHOMDl9fa3dkZWZhdWx0c19flE6MDF9fZGVmYXVsdHNfX5ROjApfX21vZHVsZV9flIwIX19tYWluX1+UjAdfX2RvY19flE6MC19fY2xvc3VyZV9flE6MF19jbG91ZHBpY2tsZV9zdWJtb2R1bGVzlF2UjAtfX2dsb2JhbHNfX5R9lHWGlIZSMC4=' FC_HASH='96016e628bb8ea6ebb2aa8a49ba688a0cdd844a24545a1e08915ecaa4c3bb823'
+[2025-07-07 10:51:57,778] [DEBUG] [_cognit_frontend_client.py::360] Function uploaded with ID: 254
+[2025-07-07 10:51:57,778] [DEBUG] [_edge_cluster_frontend_client.py::51] Execute function with ID 254
+[2025-07-07 10:51:57,781] [ERROR] [_edge_cluster_frontend_client.py::86] Error during execution: 401 Client Error: Unauthorized for url: http://172.21.0.1:1339/v1/functions/254/execute?app_req_id=295&mode=sync
+[2025-07-07 10:51:57,781] [ERROR] [_device_runtime_state_machine.py::219] There was a request error. Detailed message: 401 Client Error: Unauthorized for url: http://172.21.0.1:1339/v1/functions/254/execute?app_req_id=295&mode=sync
+[2025-07-07 10:51:57,832] [INFO] [_sm_handler.py::43] Current state: ready
+[2025-07-07 10:51:57,832] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 10:51:57,833] [DEBUG] [_device_runtime_state_machine.py::238] Edge Cluster Frontend connected: False
+[2025-07-07 10:51:57,833] [DEBUG] [_device_runtime_state_machine.py::238] Edge Cluster Frontend connected: False
+[2025-07-07 10:51:57,833] [DEBUG] [_cognit_frontend_client.py::252] Requesting token for oneadmin
+[2025-07-07 10:51:57,839] [DEBUG] [_device_runtime_state_machine.py::118] Token: EtEBCmcKCG9uZWFkbWluCghwYXNzd29yZAoQYjUzZDlkNDhhODBjZjA0ZRgDIgkKBwgKEgMYgAgiCgoICIEIEgMYgggyJgokCgIIGxIGCAUSAggFGhYKBAoCCAUKCAoGIK24s8MGCgQaAggAEiQIABIgHd71DzEIz7d4QlVHBGtyCqx3kOljjl-R5_d_R41grFIaQMN1hJEJtEsM2V29OOdlJk0Uld1yGQBMRIyJShZVhUl7kSguSdU9LTEu3pYtaQzNqq0tfIDrISirA_AtOfmmqQEiIgognSSQliodHSNkwnZTwf7IgnUKf1PA-WGpCkE1m-KTDNw=
+[2025-07-07 10:51:57,890] [INFO] [_sm_handler.py::43] Current state: init
+[2025-07-07 10:51:57,890] [DEBUG] [_device_runtime_state_machine.py::128] SM: Setting sm.token to cfc token
+[2025-07-07 10:51:57,891] [DEBUG] [_device_runtime_state_machine.py::135] Uploading requirements: FLAVOUR='Nature' MAX_LATENCY=None MAX_FUNCTION_EXECUTION_TIME=None MIN_ENERGY_RENEWABLE_USAGE=None GEOLOCATION=Geolocation(latitude=43.05, longitude=-2.53)
+[2025-07-07 10:51:57,891] [DEBUG] [_cognit_frontend_client.py::80] Max latency is not activated, setting is_max_latency_activated to False
+[2025-07-07 10:51:57,891] [DEBUG] [_cognit_frontend_client.py::91] Application requirements do not exist, creating them at http://localhost:1338/v1/app_requirements
+[2025-07-07 10:51:57,947] [INFO] [_sm_handler.py::43] Current state: send_init_request
+[2025-07-07 10:51:57,947] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 10:51:57,948] [DEBUG] [_device_runtime_state_machine.py::253] Requirements uploaded: True
+[2025-07-07 10:51:57,948] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 10:51:57,948] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 10:51:57,948] [DEBUG] [_device_runtime_state_machine.py::253] Requirements uploaded: True
+[2025-07-07 10:51:57,949] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 10:51:57,949] [DEBUG] [_device_runtime_state_machine.py::163] Getting Edge Cluster address from CFC
+[2025-07-07 10:51:57,961] [DEBUG] [_cognit_frontend_client.py::151] Response from get_ECFE: [{'ID': 0, 'NAME': 'default', 'HOSTS': [1, 2], 'DATASTORES': [0, 1, 2], 'VNETS': [0, 4, 5], 'TEMPLATE': {'EDGE_CLUSTER_FRONTEND': 'http://172.21.0.1:1339', 'GEOLOCATION': '40.4168,-3.7038'}}]
+[2025-07-07 10:51:57,962] [DEBUG] [_cognit_frontend_client.py::155] Item in response: {'ID': 0, 'NAME': 'default', 'HOSTS': [1, 2], 'DATASTORES': [0, 1, 2], 'VNETS': [0, 4, 5], 'TEMPLATE': {'EDGE_CLUSTER_FRONTEND': 'http://172.21.0.1:1339', 'GEOLOCATION': '40.4168,-3.7038'}}
+[2025-07-07 10:51:57,962] [DEBUG] [_cognit_frontend_client.py::176] Edge Cluster Frontend Engine: http://172.21.0.1:1339
+[2025-07-07 10:51:57,963] [DEBUG] [_cognit_frontend_client.py::238] Max latency is not activated, returning first Edge Cluster Frontend Engine: http://172.21.0.1:1339
+[2025-07-07 10:51:58,013] [INFO] [_sm_handler.py::43] Current state: get_ecf_address
+[2025-07-07 10:51:58,013] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 10:51:58,014] [DEBUG] [_device_runtime_state_machine.py::258] Number of attempts getting Edge Cluster address: 1
+[2025-07-07 10:51:58,014] [DEBUG] [_device_runtime_state_machine.py::238] Edge Cluster Frontend connected: True
+[2025-07-07 10:51:58,014] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 10:51:58,014] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 10:51:58,014] [DEBUG] [_device_runtime_state_machine.py::238] Edge Cluster Frontend connected: True
+[2025-07-07 10:51:58,015] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 10:51:58,015] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 10:51:58,016] [DEBUG] [_call_queue.py::50] CallQueue is empty
+[2025-07-07 10:51:58,066] [INFO] [_sm_handler.py::43] Current state: ready
+[2025-07-07 10:51:58,066] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 10:51:58,066] [DEBUG] [_device_runtime_state_machine.py::238] Edge Cluster Frontend connected: True
+[2025-07-07 10:51:58,067] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 10:51:58,067] [DEBUG] [_device_runtime_state_machine.py::269] New ECF address set: False
+[2025-07-07 10:51:58,067] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 10:51:58,067] [DEBUG] [_device_runtime_state_machine.py::238] Edge Cluster Frontend connected: True
+[2025-07-07 10:51:58,068] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 10:51:58,068] [DEBUG] [_device_runtime_state_machine.py::269] New ECF address set: False
+[2025-07-07 10:51:58,068] [DEBUG] [_call_queue.py::50] CallQueue is empty
+[2025-07-07 10:51:58,119] [INFO] [_sm_handler.py::43] Current state: ready
+[2025-07-07 10:51:58,119] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 10:51:58,119] [DEBUG] [_device_runtime_state_machine.py::238] Edge Cluster Frontend connected: True
+[2025-07-07 10:51:58,119] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 10:51:58,120] [DEBUG] [_device_runtime_state_machine.py::269] New ECF address set: False
+[2025-07-07 10:51:58,120] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 10:51:58,120] [DEBUG] [_device_runtime_state_machine.py::238] Edge Cluster Frontend connected: True
+[2025-07-07 10:51:58,121] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 10:51:58,121] [DEBUG] [_device_runtime_state_machine.py::269] New ECF address set: False
+[2025-07-07 10:51:58,121] [DEBUG] [_call_queue.py::50] CallQueue is empty
+[2025-07-07 10:51:58,172] [INFO] [_sm_handler.py::43] Current state: ready
+[2025-07-07 10:51:58,172] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 10:51:58,172] [DEBUG] [_device_runtime_state_machine.py::238] Edge Cluster Frontend connected: True
+[2025-07-07 10:51:58,172] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 10:51:58,172] [DEBUG] [_device_runtime_state_machine.py::269] New ECF address set: False
+[2025-07-07 10:51:58,173] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 10:51:58,173] [DEBUG] [_device_runtime_state_machine.py::238] Edge Cluster Frontend connected: True
+[2025-07-07 10:51:58,173] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 10:51:58,174] [DEBUG] [_device_runtime_state_machine.py::269] New ECF address set: False
+[2025-07-07 10:51:58,174] [DEBUG] [_call_queue.py::50] CallQueue is empty
+[2025-07-07 10:51:58,224] [INFO] [_sm_handler.py::43] Current state: ready
+[2025-07-07 10:51:58,225] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 10:51:58,225] [DEBUG] [_device_runtime_state_machine.py::238] Edge Cluster Frontend connected: True
+[2025-07-07 10:51:58,225] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 10:51:58,225] [DEBUG] [_device_runtime_state_machine.py::269] New ECF address set: False
+[2025-07-07 10:51:58,225] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 10:51:58,226] [DEBUG] [_device_runtime_state_machine.py::238] Edge Cluster Frontend connected: True
+[2025-07-07 10:51:58,226] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 10:51:58,226] [DEBUG] [_device_runtime_state_machine.py::269] New ECF address set: False
+[2025-07-07 10:51:58,227] [DEBUG] [_call_queue.py::50] CallQueue is empty
+[2025-07-07 10:51:58,277] [INFO] [_sm_handler.py::43] Current state: ready
+[2025-07-07 10:51:58,277] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 10:51:58,277] [DEBUG] [_device_runtime_state_machine.py::238] Edge Cluster Frontend connected: True
+[2025-07-07 10:51:58,278] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 10:51:58,278] [DEBUG] [_device_runtime_state_machine.py::269] New ECF address set: False
+[2025-07-07 10:51:58,278] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 10:51:58,278] [DEBUG] [_device_runtime_state_machine.py::238] Edge Cluster Frontend connected: True
+[2025-07-07 10:51:58,279] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 10:51:58,279] [DEBUG] [_device_runtime_state_machine.py::269] New ECF address set: False
+[2025-07-07 10:51:58,279] [DEBUG] [_call_queue.py::50] CallQueue is empty
+[2025-07-07 10:51:58,330] [INFO] [_sm_handler.py::43] Current state: ready
+[2025-07-07 10:51:58,330] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 10:51:58,330] [DEBUG] [_device_runtime_state_machine.py::238] Edge Cluster Frontend connected: True
+[2025-07-07 10:51:58,330] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 10:51:58,330] [DEBUG] [_device_runtime_state_machine.py::269] New ECF address set: False
+[2025-07-07 10:51:58,331] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 10:51:58,331] [DEBUG] [_device_runtime_state_machine.py::238] Edge Cluster Frontend connected: True
+[2025-07-07 10:51:58,331] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 10:51:58,332] [DEBUG] [_device_runtime_state_machine.py::269] New ECF address set: False
+[2025-07-07 10:51:58,332] [DEBUG] [_call_queue.py::50] CallQueue is empty
+[2025-07-07 10:51:58,382] [INFO] [_sm_handler.py::43] Current state: ready
+[2025-07-07 10:51:58,383] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 10:51:58,383] [DEBUG] [_device_runtime_state_machine.py::238] Edge Cluster Frontend connected: True
+[2025-07-07 10:51:58,383] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 10:51:58,383] [DEBUG] [_device_runtime_state_machine.py::269] New ECF address set: False
+[2025-07-07 10:51:58,383] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 10:51:58,384] [DEBUG] [_device_runtime_state_machine.py::238] Edge Cluster Frontend connected: True
+[2025-07-07 10:51:58,384] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 10:51:58,384] [DEBUG] [_device_runtime_state_machine.py::269] New ECF address set: False
+[2025-07-07 10:51:58,385] [DEBUG] [_call_queue.py::50] CallQueue is empty
+[2025-07-07 10:51:58,435] [INFO] [_sm_handler.py::43] Current state: ready
+[2025-07-07 10:51:58,435] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 10:51:58,435] [DEBUG] [_device_runtime_state_machine.py::238] Edge Cluster Frontend connected: True
+[2025-07-07 10:51:58,436] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 10:51:58,436] [DEBUG] [_device_runtime_state_machine.py::269] New ECF address set: False
+[2025-07-07 10:51:58,436] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 10:51:58,436] [DEBUG] [_device_runtime_state_machine.py::238] Edge Cluster Frontend connected: True
+[2025-07-07 10:51:58,437] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 10:51:58,437] [DEBUG] [_device_runtime_state_machine.py::269] New ECF address set: False
+[2025-07-07 10:51:58,437] [DEBUG] [_call_queue.py::50] CallQueue is empty
+[2025-07-07 10:51:58,488] [INFO] [_sm_handler.py::43] Current state: ready
+[2025-07-07 10:51:58,488] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 10:51:58,488] [DEBUG] [_device_runtime_state_machine.py::238] Edge Cluster Frontend connected: True
+[2025-07-07 10:51:58,489] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 10:51:58,489] [DEBUG] [_device_runtime_state_machine.py::269] New ECF address set: False
+[2025-07-07 10:51:58,489] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 10:51:58,489] [DEBUG] [_device_runtime_state_machine.py::238] Edge Cluster Frontend connected: True
+[2025-07-07 10:51:58,490] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 10:51:58,490] [DEBUG] [_device_runtime_state_machine.py::269] New ECF address set: False
+[2025-07-07 10:51:58,490] [DEBUG] [_call_queue.py::50] CallQueue is empty
+[2025-07-07 10:51:58,541] [INFO] [_sm_handler.py::43] Current state: ready
+[2025-07-07 10:51:58,541] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 10:51:58,541] [DEBUG] [_device_runtime_state_machine.py::238] Edge Cluster Frontend connected: True
+[2025-07-07 10:51:58,541] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 10:51:58,541] [DEBUG] [_device_runtime_state_machine.py::269] New ECF address set: False
+[2025-07-07 10:51:58,542] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 10:51:58,542] [DEBUG] [_device_runtime_state_machine.py::238] Edge Cluster Frontend connected: True
+[2025-07-07 10:51:58,542] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 10:51:58,543] [DEBUG] [_device_runtime_state_machine.py::269] New ECF address set: False
+[2025-07-07 10:51:58,543] [DEBUG] [_call_queue.py::50] CallQueue is empty
+[2025-07-07 10:51:58,593] [INFO] [_sm_handler.py::43] Current state: ready
+[2025-07-07 10:51:58,594] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 10:51:58,594] [DEBUG] [_device_runtime_state_machine.py::238] Edge Cluster Frontend connected: True
+[2025-07-07 10:51:58,594] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 10:51:58,594] [DEBUG] [_device_runtime_state_machine.py::269] New ECF address set: False
+[2025-07-07 10:51:58,594] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 10:51:58,595] [DEBUG] [_device_runtime_state_machine.py::238] Edge Cluster Frontend connected: True
+[2025-07-07 10:51:58,595] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 10:51:58,595] [DEBUG] [_device_runtime_state_machine.py::269] New ECF address set: False
+[2025-07-07 10:51:58,596] [DEBUG] [_call_queue.py::50] CallQueue is empty
+[2025-07-07 10:51:58,646] [INFO] [_sm_handler.py::43] Current state: ready
+[2025-07-07 10:51:58,646] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 10:51:58,647] [DEBUG] [_device_runtime_state_machine.py::238] Edge Cluster Frontend connected: True
+[2025-07-07 10:51:58,647] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 10:51:58,647] [DEBUG] [_device_runtime_state_machine.py::269] New ECF address set: False
+[2025-07-07 10:51:58,647] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 10:51:58,648] [DEBUG] [_device_runtime_state_machine.py::238] Edge Cluster Frontend connected: True
+[2025-07-07 10:51:58,648] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 10:51:58,648] [DEBUG] [_device_runtime_state_machine.py::269] New ECF address set: False
+[2025-07-07 10:51:58,649] [DEBUG] [_call_queue.py::50] CallQueue is empty
+[2025-07-07 10:51:58,699] [INFO] [_sm_handler.py::43] Current state: ready
+[2025-07-07 10:51:58,700] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 10:51:58,700] [DEBUG] [_device_runtime_state_machine.py::238] Edge Cluster Frontend connected: True
+[2025-07-07 10:51:58,700] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 10:51:58,700] [DEBUG] [_device_runtime_state_machine.py::269] New ECF address set: False
+[2025-07-07 10:51:58,700] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 10:51:58,701] [DEBUG] [_device_runtime_state_machine.py::238] Edge Cluster Frontend connected: True
+[2025-07-07 10:51:58,701] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 10:51:58,701] [DEBUG] [_device_runtime_state_machine.py::269] New ECF address set: False
+[2025-07-07 10:51:58,702] [DEBUG] [_call_queue.py::50] CallQueue is empty
+[2025-07-07 10:51:58,752] [INFO] [device_runtime.py::104] DeviceRuntime stopped
+[2025-07-07 11:01:11,469] [DEBUG] [_cognit_frontend_client.py::252] Requesting token for oneadmin
+[2025-07-07 11:01:11,477] [DEBUG] [_device_runtime_state_machine.py::118] Token: EtEBCmcKCG9uZWFkbWluCghwYXNzd29yZAoQYjUzZDlkNDhhODBjZjA0ZRgDIgkKBwgKEgMYgAgiCgoICIEIEgMYgggyJgokCgIIGxIGCAUSAggFGhYKBAoCCAUKCAoGINe8s8MGCgQaAggAEiQIABIgHg2XkOB3LBTzPev5A8ZDuxMFSLcvFbIxvp1-pDzorTMaQC76aGA9MOCAS2F1XL0-kZm1COCt0Y8Tyy0a65U9l1VOPtHTRT1EG4BV9v_Yoxo7209WMsxQEAoyg8-W4xf_fwsiIgogz3R2Try8ZDDsY7vI7UE60WxYmqgFCOUn1NAksljd10w=
+[2025-07-07 11:01:11,477] [INFO] [device_runtime.py::83] DeviceRuntime initialized
+[2025-07-07 11:01:11,477] [DEBUG] [device_runtime.py::187] Function added to the queue
+[2025-07-07 11:01:11,478] [INFO] [_sm_handler.py::43] Current state: init
+[2025-07-07 11:01:11,478] [DEBUG] [_device_runtime_state_machine.py::128] SM: Setting sm.token to cfc token
+[2025-07-07 11:01:11,479] [DEBUG] [_device_runtime_state_machine.py::135] Uploading requirements: FLAVOUR='Nature' MAX_LATENCY=None MAX_FUNCTION_EXECUTION_TIME=None MIN_ENERGY_RENEWABLE_USAGE=None GEOLOCATION=Geolocation(latitude=43.05, longitude=-2.53)
+[2025-07-07 11:01:11,479] [DEBUG] [_cognit_frontend_client.py::80] Max latency is not activated, setting is_max_latency_activated to False
+[2025-07-07 11:01:11,480] [DEBUG] [_cognit_frontend_client.py::91] Application requirements do not exist, creating them at http://localhost:1338/v1/app_requirements
+[2025-07-07 11:01:11,536] [INFO] [_sm_handler.py::43] Current state: send_init_request
+[2025-07-07 11:01:11,537] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 11:01:11,537] [DEBUG] [_device_runtime_state_machine.py::253] Requirements uploaded: True
+[2025-07-07 11:01:11,537] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 11:01:11,537] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 11:01:11,538] [DEBUG] [_device_runtime_state_machine.py::253] Requirements uploaded: True
+[2025-07-07 11:01:11,538] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 11:01:11,538] [DEBUG] [_device_runtime_state_machine.py::163] Getting Edge Cluster address from CFC
+[2025-07-07 11:01:11,550] [DEBUG] [_cognit_frontend_client.py::151] Response from get_ECFE: [{'ID': 0, 'NAME': 'default', 'HOSTS': [1, 2], 'DATASTORES': [0, 1, 2], 'VNETS': [0, 4, 5], 'TEMPLATE': {'EDGE_CLUSTER_FRONTEND': 'http://172.21.0.1:1339', 'GEOLOCATION': '40.4168,-3.7038'}}]
+[2025-07-07 11:01:11,550] [DEBUG] [_cognit_frontend_client.py::155] Item in response: {'ID': 0, 'NAME': 'default', 'HOSTS': [1, 2], 'DATASTORES': [0, 1, 2], 'VNETS': [0, 4, 5], 'TEMPLATE': {'EDGE_CLUSTER_FRONTEND': 'http://172.21.0.1:1339', 'GEOLOCATION': '40.4168,-3.7038'}}
+[2025-07-07 11:01:11,551] [DEBUG] [_cognit_frontend_client.py::176] Edge Cluster Frontend Engine: http://172.21.0.1:1339
+[2025-07-07 11:01:11,551] [DEBUG] [_cognit_frontend_client.py::238] Max latency is not activated, returning first Edge Cluster Frontend Engine: http://172.21.0.1:1339
+[2025-07-07 11:01:11,602] [INFO] [_sm_handler.py::43] Current state: get_ecf_address
+[2025-07-07 11:01:11,602] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 11:01:11,602] [DEBUG] [_device_runtime_state_machine.py::258] Number of attempts getting Edge Cluster address: 1
+[2025-07-07 11:01:11,602] [DEBUG] [_device_runtime_state_machine.py::238] Edge Cluster Frontend connected: True
+[2025-07-07 11:01:11,603] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 11:01:11,603] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 11:01:11,603] [DEBUG] [_device_runtime_state_machine.py::238] Edge Cluster Frontend connected: True
+[2025-07-07 11:01:11,603] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 11:01:11,604] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 11:01:11,604] [DEBUG] [_cognit_frontend_client.py::378] Uploading function: LANG=<FunctionLanguage.PY: 'PY'> FC='gAWVrwIAAAAAAACMF2Nsb3VkcGlja2xlLmNsb3VkcGlja2xllIwOX21ha2VfZnVuY3Rpb26Uk5QoaACMDV9idWlsdGluX3R5cGWUk5SMCENvZGVUeXBllIWUUpQoSwFLAEsASwhLBktDQ3BkAWQAbAB9AWQBZABsAX0CZAFkAGwCfQN8AaAAoQB8ABcAfQRkAX0FfAGgAKEAfARrAHI2fAOgAqEAfQZ0A2QCgwFEAF0NfQd8BXwCoAR8BmQDEwB8BhcAoQE3AH0FcSJ8AaAAoQB8BGsAcxp8BVMAlChOSwBN6ANLAnSUKIwEdGltZZSMBG1hdGiUjAZyYW5kb22UjAVyYW5nZZSMBHNxcnSUdJQojAhkdXJhdGlvbpRoCmgLaAyMCGVuZF90aW1llIwGcmVzdWx0lIwBeJSMAV+UdJSMOC92YXIvbGliL29uZS9DT0dOSVQvY29nbml0LWNsaWVudC9leGFtcGxlcy9zdHJlc3NfY3B1LnB5lIwGc3RyZXNzlEsHQxYIAQgBCAEMAgQBDAIIAQwBGAEM/QQElCkpdJRSlH2UTk5OdJRSlIwcY2xvdWRwaWNrbGUuY2xvdWRwaWNrbGVfZmFzdJSMEl9mdW5jdGlvbl9zZXRzdGF0ZZSTlGgdfZR9lCiMCF9fbmFtZV9flGgXjAxfX3F1YWxuYW1lX1+UaBeMD19fYW5ub3RhdGlvbnNfX5R9lGgQjAhidWlsdGluc5SMA2ludJSTlHOMDl9fa3dkZWZhdWx0c19flE6MDF9fZGVmYXVsdHNfX5ROjApfX21vZHVsZV9flIwIX19tYWluX1+UjAdfX2RvY19flE6MC19fY2xvc3VyZV9flE6MF19jbG91ZHBpY2tsZV9zdWJtb2R1bGVzlF2UjAtfX2dsb2JhbHNfX5R9lHWGlIZSMC4=' FC_HASH='96016e628bb8ea6ebb2aa8a49ba688a0cdd844a24545a1e08915ecaa4c3bb823'
+[2025-07-07 11:01:11,611] [DEBUG] [_cognit_frontend_client.py::360] Function uploaded with ID: 254
+[2025-07-07 11:01:11,612] [DEBUG] [_edge_cluster_frontend_client.py::51] Execute function with ID 254
+[2025-07-07 11:02:51,965] [DEBUG] [_cognit_frontend_client.py::252] Requesting token for oneadmin
+[2025-07-07 11:02:51,974] [DEBUG] [_device_runtime_state_machine.py::118] Token: EtEBCmcKCG9uZWFkbWluCghwYXNzd29yZAoQYjUzZDlkNDhhODBjZjA0ZRgDIgkKBwgKEgMYgAgiCgoICIEIEgMYgggyJgokCgIIGxIGCAUSAggFGhYKBAoCCAUKCAoGILu9s8MGCgQaAggAEiQIABIgTZnE79ZqqNHEC1wJ_ve8cjQkGdBwBibJxLuzoeLmCrQaQBrLRu3eyyMNTZqPKI6GKtOzHSQVN-fStK4EFXpJNupT_YRxTwsYFmNoDrXoEk2bSrtOpXLbkuN1Lo6pgvtq1w8iIgogY7Xc5VUA_nuRBQOkwIdWvJpcBEZEW9CyOMceHoedRgM=
+[2025-07-07 11:02:51,975] [INFO] [device_runtime.py::83] DeviceRuntime initialized
+[2025-07-07 11:02:51,975] [INFO] [_sm_handler.py::43] Current state: init
+[2025-07-07 11:02:51,975] [DEBUG] [device_runtime.py::187] Function added to the queue
+[2025-07-07 11:02:51,976] [DEBUG] [_device_runtime_state_machine.py::128] SM: Setting sm.token to cfc token
+[2025-07-07 11:02:51,976] [DEBUG] [_device_runtime_state_machine.py::135] Uploading requirements: FLAVOUR='Nature' MAX_LATENCY=None MAX_FUNCTION_EXECUTION_TIME=None MIN_ENERGY_RENEWABLE_USAGE=None GEOLOCATION=Geolocation(latitude=43.05, longitude=-2.53)
+[2025-07-07 11:02:51,977] [DEBUG] [_cognit_frontend_client.py::80] Max latency is not activated, setting is_max_latency_activated to False
+[2025-07-07 11:02:51,977] [DEBUG] [_cognit_frontend_client.py::91] Application requirements do not exist, creating them at http://localhost:1338/v1/app_requirements
+[2025-07-07 11:02:52,034] [INFO] [_sm_handler.py::43] Current state: send_init_request
+[2025-07-07 11:02:52,034] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 11:02:52,034] [DEBUG] [_device_runtime_state_machine.py::253] Requirements uploaded: True
+[2025-07-07 11:02:52,034] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 11:02:52,035] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 11:02:52,035] [DEBUG] [_device_runtime_state_machine.py::253] Requirements uploaded: True
+[2025-07-07 11:02:52,035] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 11:02:52,036] [DEBUG] [_device_runtime_state_machine.py::163] Getting Edge Cluster address from CFC
+[2025-07-07 11:02:52,048] [DEBUG] [_cognit_frontend_client.py::151] Response from get_ECFE: [{'ID': 0, 'NAME': 'default', 'HOSTS': [1, 2], 'DATASTORES': [0, 1, 2], 'VNETS': [0, 4, 5], 'TEMPLATE': {'EDGE_CLUSTER_FRONTEND': 'http://172.21.0.1:1339', 'GEOLOCATION': '40.4168,-3.7038'}}]
+[2025-07-07 11:02:52,049] [DEBUG] [_cognit_frontend_client.py::155] Item in response: {'ID': 0, 'NAME': 'default', 'HOSTS': [1, 2], 'DATASTORES': [0, 1, 2], 'VNETS': [0, 4, 5], 'TEMPLATE': {'EDGE_CLUSTER_FRONTEND': 'http://172.21.0.1:1339', 'GEOLOCATION': '40.4168,-3.7038'}}
+[2025-07-07 11:02:52,049] [DEBUG] [_cognit_frontend_client.py::176] Edge Cluster Frontend Engine: http://172.21.0.1:1339
+[2025-07-07 11:02:52,049] [DEBUG] [_cognit_frontend_client.py::238] Max latency is not activated, returning first Edge Cluster Frontend Engine: http://172.21.0.1:1339
+[2025-07-07 11:02:52,100] [INFO] [_sm_handler.py::43] Current state: get_ecf_address
+[2025-07-07 11:02:52,100] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 11:02:52,100] [DEBUG] [_device_runtime_state_machine.py::258] Number of attempts getting Edge Cluster address: 1
+[2025-07-07 11:02:52,100] [DEBUG] [_device_runtime_state_machine.py::238] Edge Cluster Frontend connected: True
+[2025-07-07 11:02:52,101] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 11:02:52,101] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 11:02:52,101] [DEBUG] [_device_runtime_state_machine.py::238] Edge Cluster Frontend connected: True
+[2025-07-07 11:02:52,102] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 11:02:52,102] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 11:02:52,103] [DEBUG] [_cognit_frontend_client.py::378] Uploading function: LANG=<FunctionLanguage.PY: 'PY'> FC='gAWVrwIAAAAAAACMF2Nsb3VkcGlja2xlLmNsb3VkcGlja2xllIwOX21ha2VfZnVuY3Rpb26Uk5QoaACMDV9idWlsdGluX3R5cGWUk5SMCENvZGVUeXBllIWUUpQoSwFLAEsASwhLBktDQ3BkAWQAbAB9AWQBZABsAX0CZAFkAGwCfQN8AaAAoQB8ABcAfQRkAX0FfAGgAKEAfARrAHI2fAOgAqEAfQZ0A2QCgwFEAF0NfQd8BXwCoAR8BmQDEwB8BhcAoQE3AH0FcSJ8AaAAoQB8BGsAcxp8BVMAlChOSwBN6ANLAnSUKIwEdGltZZSMBG1hdGiUjAZyYW5kb22UjAVyYW5nZZSMBHNxcnSUdJQojAhkdXJhdGlvbpRoCmgLaAyMCGVuZF90aW1llIwGcmVzdWx0lIwBeJSMAV+UdJSMOC92YXIvbGliL29uZS9DT0dOSVQvY29nbml0LWNsaWVudC9leGFtcGxlcy9zdHJlc3NfY3B1LnB5lIwGc3RyZXNzlEsHQxYIAQgBCAEMAgQBDAIIAQwBGAEM/QQElCkpdJRSlH2UTk5OdJRSlIwcY2xvdWRwaWNrbGUuY2xvdWRwaWNrbGVfZmFzdJSMEl9mdW5jdGlvbl9zZXRzdGF0ZZSTlGgdfZR9lCiMCF9fbmFtZV9flGgXjAxfX3F1YWxuYW1lX1+UaBeMD19fYW5ub3RhdGlvbnNfX5R9lGgQjAhidWlsdGluc5SMA2ludJSTlHOMDl9fa3dkZWZhdWx0c19flE6MDF9fZGVmYXVsdHNfX5ROjApfX21vZHVsZV9flIwIX19tYWluX1+UjAdfX2RvY19flE6MC19fY2xvc3VyZV9flE6MF19jbG91ZHBpY2tsZV9zdWJtb2R1bGVzlF2UjAtfX2dsb2JhbHNfX5R9lHWGlIZSMC4=' FC_HASH='96016e628bb8ea6ebb2aa8a49ba688a0cdd844a24545a1e08915ecaa4c3bb823'
+[2025-07-07 11:02:52,109] [DEBUG] [_cognit_frontend_client.py::360] Function uploaded with ID: 254
+[2025-07-07 11:02:52,110] [DEBUG] [_edge_cluster_frontend_client.py::51] Execute function with ID 254
+[2025-07-07 11:05:22,114] [DEBUG] [_cognit_frontend_client.py::252] Requesting token for oneadmin
+[2025-07-07 11:05:22,122] [DEBUG] [_device_runtime_state_machine.py::118] Token: EtEBCmcKCG9uZWFkbWluCghwYXNzd29yZAoQYjUzZDlkNDhhODBjZjA0ZRgDIgkKBwgKEgMYgAgiCgoICIEIEgMYgggyJgokCgIIGxIGCAUSAggFGhYKBAoCCAUKCAoGINK-s8MGCgQaAggAEiQIABIgMhVoD90Wk0VcIdy3huiF7oAFf-NmvfYOrH8eMcHc4ewaQNmbLGUSnZE538DJqTexDm0o0FKpiUsLt0jQ1IBYTliHj28AR11WLupSaLjZjwJqei72U8wfYok1k0BQiGUhjgciIgogFEx_-BYH1qOVxsQOYkDkOMqwZoAwY0gbvAxpB3cNCkg=
+[2025-07-07 11:05:22,123] [INFO] [device_runtime.py::83] DeviceRuntime initialized
+[2025-07-07 11:05:22,123] [INFO] [_sm_handler.py::43] Current state: init
+[2025-07-07 11:05:22,124] [DEBUG] [device_runtime.py::187] Function added to the queue
+[2025-07-07 11:05:22,124] [DEBUG] [_device_runtime_state_machine.py::128] SM: Setting sm.token to cfc token
+[2025-07-07 11:05:22,125] [DEBUG] [_device_runtime_state_machine.py::135] Uploading requirements: FLAVOUR='Nature' MAX_LATENCY=None MAX_FUNCTION_EXECUTION_TIME=None MIN_ENERGY_RENEWABLE_USAGE=None GEOLOCATION=Geolocation(latitude=43.05, longitude=-2.53)
+[2025-07-07 11:05:22,125] [DEBUG] [_cognit_frontend_client.py::80] Max latency is not activated, setting is_max_latency_activated to False
+[2025-07-07 11:05:22,126] [DEBUG] [_cognit_frontend_client.py::91] Application requirements do not exist, creating them at http://localhost:1338/v1/app_requirements
+[2025-07-07 11:05:22,183] [INFO] [_sm_handler.py::43] Current state: send_init_request
+[2025-07-07 11:05:22,183] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 11:05:22,183] [DEBUG] [_device_runtime_state_machine.py::253] Requirements uploaded: True
+[2025-07-07 11:05:22,184] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 11:05:22,184] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 11:05:22,184] [DEBUG] [_device_runtime_state_machine.py::253] Requirements uploaded: True
+[2025-07-07 11:05:22,185] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 11:05:22,185] [DEBUG] [_device_runtime_state_machine.py::163] Getting Edge Cluster address from CFC
+[2025-07-07 11:05:22,198] [DEBUG] [_cognit_frontend_client.py::151] Response from get_ECFE: [{'ID': 0, 'NAME': 'default', 'HOSTS': [1, 2], 'DATASTORES': [0, 1, 2], 'VNETS': [0, 4, 5], 'TEMPLATE': {'EDGE_CLUSTER_FRONTEND': 'http://172.21.0.1:1339', 'GEOLOCATION': '40.4168,-3.7038'}}]
+[2025-07-07 11:05:22,198] [DEBUG] [_cognit_frontend_client.py::155] Item in response: {'ID': 0, 'NAME': 'default', 'HOSTS': [1, 2], 'DATASTORES': [0, 1, 2], 'VNETS': [0, 4, 5], 'TEMPLATE': {'EDGE_CLUSTER_FRONTEND': 'http://172.21.0.1:1339', 'GEOLOCATION': '40.4168,-3.7038'}}
+[2025-07-07 11:05:22,199] [DEBUG] [_cognit_frontend_client.py::176] Edge Cluster Frontend Engine: http://172.21.0.1:1339
+[2025-07-07 11:05:22,199] [DEBUG] [_cognit_frontend_client.py::238] Max latency is not activated, returning first Edge Cluster Frontend Engine: http://172.21.0.1:1339
+[2025-07-07 11:05:22,249] [INFO] [_sm_handler.py::43] Current state: get_ecf_address
+[2025-07-07 11:05:22,250] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 11:05:22,250] [DEBUG] [_device_runtime_state_machine.py::258] Number of attempts getting Edge Cluster address: 1
+[2025-07-07 11:05:22,250] [DEBUG] [_device_runtime_state_machine.py::238] Edge Cluster Frontend connected: True
+[2025-07-07 11:05:22,250] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 11:05:22,251] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 11:05:22,251] [DEBUG] [_device_runtime_state_machine.py::238] Edge Cluster Frontend connected: True
+[2025-07-07 11:05:22,251] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 11:05:22,252] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 11:05:22,252] [DEBUG] [_cognit_frontend_client.py::378] Uploading function: LANG=<FunctionLanguage.PY: 'PY'> FC='gAWVrwIAAAAAAACMF2Nsb3VkcGlja2xlLmNsb3VkcGlja2xllIwOX21ha2VfZnVuY3Rpb26Uk5QoaACMDV9idWlsdGluX3R5cGWUk5SMCENvZGVUeXBllIWUUpQoSwFLAEsASwhLBktDQ3BkAWQAbAB9AWQBZABsAX0CZAFkAGwCfQN8AaAAoQB8ABcAfQRkAX0FfAGgAKEAfARrAHI2fAOgAqEAfQZ0A2QCgwFEAF0NfQd8BXwCoAR8BmQDEwB8BhcAoQE3AH0FcSJ8AaAAoQB8BGsAcxp8BVMAlChOSwBN6ANLAnSUKIwEdGltZZSMBG1hdGiUjAZyYW5kb22UjAVyYW5nZZSMBHNxcnSUdJQojAhkdXJhdGlvbpRoCmgLaAyMCGVuZF90aW1llIwGcmVzdWx0lIwBeJSMAV+UdJSMOC92YXIvbGliL29uZS9DT0dOSVQvY29nbml0LWNsaWVudC9leGFtcGxlcy9zdHJlc3NfY3B1LnB5lIwGc3RyZXNzlEsHQxYIAQgBCAEMAgQBDAIIAQwBGAEM/QQElCkpdJRSlH2UTk5OdJRSlIwcY2xvdWRwaWNrbGUuY2xvdWRwaWNrbGVfZmFzdJSMEl9mdW5jdGlvbl9zZXRzdGF0ZZSTlGgdfZR9lCiMCF9fbmFtZV9flGgXjAxfX3F1YWxuYW1lX1+UaBeMD19fYW5ub3RhdGlvbnNfX5R9lGgQjAhidWlsdGluc5SMA2ludJSTlHOMDl9fa3dkZWZhdWx0c19flE6MDF9fZGVmYXVsdHNfX5ROjApfX21vZHVsZV9flIwIX19tYWluX1+UjAdfX2RvY19flE6MC19fY2xvc3VyZV9flE6MF19jbG91ZHBpY2tsZV9zdWJtb2R1bGVzlF2UjAtfX2dsb2JhbHNfX5R9lHWGlIZSMC4=' FC_HASH='96016e628bb8ea6ebb2aa8a49ba688a0cdd844a24545a1e08915ecaa4c3bb823'
+[2025-07-07 11:05:22,259] [DEBUG] [_cognit_frontend_client.py::360] Function uploaded with ID: 254
+[2025-07-07 11:05:22,260] [DEBUG] [_edge_cluster_frontend_client.py::51] Execute function with ID 254
+[2025-07-07 11:12:22,736] [DEBUG] [_cognit_frontend_client.py::252] Requesting token for oneadmin
+[2025-07-07 11:12:22,744] [DEBUG] [_device_runtime_state_machine.py::118] Token: EtEBCmcKCG9uZWFkbWluCghwYXNzd29yZAoQYjUzZDlkNDhhODBjZjA0ZRgDIgkKBwgKEgMYgAgiCgoICIEIEgMYgggyJgokCgIIGxIGCAUSAggFGhYKBAoCCAUKCAoGIPbBs8MGCgQaAggAEiQIABIgd-XpE7DFSudOaM9Fp3pdfzHPNrTE1TYXNEusCc1wlwoaQOnZZE78_XuxsWXUydNH7A3srZ4BpV4HblxFcmyalNwish50M0KIrdrIUYHKwfaXfesZUOCkHka0CwNfWgQfRg0iIgogEuXtgNNc87UQGmeWuWZ2hi3s0RgWCFzB8d2wm3TpL8I=
+[2025-07-07 11:12:22,744] [INFO] [device_runtime.py::83] DeviceRuntime initialized
+[2025-07-07 11:12:22,745] [DEBUG] [device_runtime.py::187] Function added to the queue
+[2025-07-07 11:12:22,745] [INFO] [_sm_handler.py::43] Current state: init
+[2025-07-07 11:12:22,746] [DEBUG] [_device_runtime_state_machine.py::128] SM: Setting sm.token to cfc token
+[2025-07-07 11:12:22,746] [DEBUG] [_device_runtime_state_machine.py::135] Uploading requirements: FLAVOUR='Nature' MAX_LATENCY=None MAX_FUNCTION_EXECUTION_TIME=None MIN_ENERGY_RENEWABLE_USAGE=None GEOLOCATION=Geolocation(latitude=43.05, longitude=-2.53)
+[2025-07-07 11:12:22,747] [DEBUG] [_cognit_frontend_client.py::80] Max latency is not activated, setting is_max_latency_activated to False
+[2025-07-07 11:12:22,747] [DEBUG] [_cognit_frontend_client.py::91] Application requirements do not exist, creating them at http://localhost:1338/v1/app_requirements
+[2025-07-07 11:12:22,804] [INFO] [_sm_handler.py::43] Current state: send_init_request
+[2025-07-07 11:12:22,804] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 11:12:22,804] [DEBUG] [_device_runtime_state_machine.py::253] Requirements uploaded: True
+[2025-07-07 11:12:22,805] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 11:12:22,805] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 11:12:22,805] [DEBUG] [_device_runtime_state_machine.py::253] Requirements uploaded: True
+[2025-07-07 11:12:22,806] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 11:12:22,806] [DEBUG] [_device_runtime_state_machine.py::163] Getting Edge Cluster address from CFC
+[2025-07-07 11:12:22,818] [DEBUG] [_cognit_frontend_client.py::151] Response from get_ECFE: [{'ID': 0, 'NAME': 'default', 'HOSTS': [1, 2], 'DATASTORES': [0, 1, 2], 'VNETS': [0, 4, 5], 'TEMPLATE': {'EDGE_CLUSTER_FRONTEND': 'http://172.21.0.1:1339', 'GEOLOCATION': '40.4168,-3.7038'}}]
+[2025-07-07 11:12:22,818] [DEBUG] [_cognit_frontend_client.py::155] Item in response: {'ID': 0, 'NAME': 'default', 'HOSTS': [1, 2], 'DATASTORES': [0, 1, 2], 'VNETS': [0, 4, 5], 'TEMPLATE': {'EDGE_CLUSTER_FRONTEND': 'http://172.21.0.1:1339', 'GEOLOCATION': '40.4168,-3.7038'}}
+[2025-07-07 11:12:22,818] [DEBUG] [_cognit_frontend_client.py::176] Edge Cluster Frontend Engine: http://172.21.0.1:1339
+[2025-07-07 11:12:22,819] [DEBUG] [_cognit_frontend_client.py::238] Max latency is not activated, returning first Edge Cluster Frontend Engine: http://172.21.0.1:1339
+[2025-07-07 11:12:22,869] [INFO] [_sm_handler.py::43] Current state: get_ecf_address
+[2025-07-07 11:12:22,870] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 11:12:22,870] [DEBUG] [_device_runtime_state_machine.py::258] Number of attempts getting Edge Cluster address: 1
+[2025-07-07 11:12:22,870] [DEBUG] [_device_runtime_state_machine.py::238] Edge Cluster Frontend connected: True
+[2025-07-07 11:12:22,871] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 11:12:22,871] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 11:12:22,871] [DEBUG] [_device_runtime_state_machine.py::238] Edge Cluster Frontend connected: True
+[2025-07-07 11:12:22,871] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 11:12:22,872] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 11:12:22,873] [DEBUG] [_cognit_frontend_client.py::378] Uploading function: LANG=<FunctionLanguage.PY: 'PY'> FC='gAWVrwIAAAAAAACMF2Nsb3VkcGlja2xlLmNsb3VkcGlja2xllIwOX21ha2VfZnVuY3Rpb26Uk5QoaACMDV9idWlsdGluX3R5cGWUk5SMCENvZGVUeXBllIWUUpQoSwFLAEsASwhLBktDQ3BkAWQAbAB9AWQBZABsAX0CZAFkAGwCfQN8AaAAoQB8ABcAfQRkAX0FfAGgAKEAfARrAHI2fAOgAqEAfQZ0A2QCgwFEAF0NfQd8BXwCoAR8BmQDEwB8BhcAoQE3AH0FcSJ8AaAAoQB8BGsAcxp8BVMAlChOSwBN6ANLAnSUKIwEdGltZZSMBG1hdGiUjAZyYW5kb22UjAVyYW5nZZSMBHNxcnSUdJQojAhkdXJhdGlvbpRoCmgLaAyMCGVuZF90aW1llIwGcmVzdWx0lIwBeJSMAV+UdJSMOC92YXIvbGliL29uZS9DT0dOSVQvY29nbml0LWNsaWVudC9leGFtcGxlcy9zdHJlc3NfY3B1LnB5lIwGc3RyZXNzlEsHQxYIAQgBCAEMAgQBDAIIAQwBGAEM/QQElCkpdJRSlH2UTk5OdJRSlIwcY2xvdWRwaWNrbGUuY2xvdWRwaWNrbGVfZmFzdJSMEl9mdW5jdGlvbl9zZXRzdGF0ZZSTlGgdfZR9lCiMCF9fbmFtZV9flGgXjAxfX3F1YWxuYW1lX1+UaBeMD19fYW5ub3RhdGlvbnNfX5R9lGgQjAhidWlsdGluc5SMA2ludJSTlHOMDl9fa3dkZWZhdWx0c19flE6MDF9fZGVmYXVsdHNfX5ROjApfX21vZHVsZV9flIwIX19tYWluX1+UjAdfX2RvY19flE6MC19fY2xvc3VyZV9flE6MF19jbG91ZHBpY2tsZV9zdWJtb2R1bGVzlF2UjAtfX2dsb2JhbHNfX5R9lHWGlIZSMC4=' FC_HASH='96016e628bb8ea6ebb2aa8a49ba688a0cdd844a24545a1e08915ecaa4c3bb823'
+[2025-07-07 11:12:22,879] [DEBUG] [_cognit_frontend_client.py::360] Function uploaded with ID: 254
+[2025-07-07 11:12:22,879] [DEBUG] [_edge_cluster_frontend_client.py::51] Execute function with ID 254
+[2025-07-07 11:15:29,963] [DEBUG] [_cognit_frontend_client.py::252] Requesting token for oneadmin
+[2025-07-07 11:15:29,971] [DEBUG] [_device_runtime_state_machine.py::118] Token: EtEBCmcKCG9uZWFkbWluCghwYXNzd29yZAoQYjUzZDlkNDhhODBjZjA0ZRgDIgkKBwgKEgMYgAgiCgoICIEIEgMYgggyJgokCgIIGxIGCAUSAggFGhYKBAoCCAUKCAoGILHDs8MGCgQaAggAEiQIABIg47OWPbtOz3h6EVgMsJ9KUvzPh-51SgbsZFL50MiyEuoaQHz9_d2ImHAoUBWMy4rs18o1CdUE4xDq36stUBSfD-0wXgx5pxyjHh2jJ8h-bGph57XP4yjYUtlyyAyau_ztCgoiIgogl8ssrSEf9TaDlnfeSX4kMo0S3YYXuoRB7gN5yQIyQqE=
+[2025-07-07 11:15:29,972] [INFO] [device_runtime.py::83] DeviceRuntime initialized
+[2025-07-07 11:15:29,972] [DEBUG] [device_runtime.py::187] Function added to the queue
+[2025-07-07 11:15:29,972] [INFO] [_sm_handler.py::43] Current state: init
+[2025-07-07 11:15:29,973] [DEBUG] [_device_runtime_state_machine.py::128] SM: Setting sm.token to cfc token
+[2025-07-07 11:15:29,973] [DEBUG] [_device_runtime_state_machine.py::135] Uploading requirements: FLAVOUR='Nature' MAX_LATENCY=None MAX_FUNCTION_EXECUTION_TIME=None MIN_ENERGY_RENEWABLE_USAGE=None GEOLOCATION=Geolocation(latitude=43.05, longitude=-2.53)
+[2025-07-07 11:15:29,974] [DEBUG] [_cognit_frontend_client.py::80] Max latency is not activated, setting is_max_latency_activated to False
+[2025-07-07 11:15:29,974] [DEBUG] [_cognit_frontend_client.py::91] Application requirements do not exist, creating them at http://localhost:1338/v1/app_requirements
+[2025-07-07 11:15:30,031] [INFO] [_sm_handler.py::43] Current state: send_init_request
+[2025-07-07 11:15:30,031] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 11:15:30,032] [DEBUG] [_device_runtime_state_machine.py::253] Requirements uploaded: True
+[2025-07-07 11:15:30,032] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 11:15:30,032] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 11:15:30,033] [DEBUG] [_device_runtime_state_machine.py::253] Requirements uploaded: True
+[2025-07-07 11:15:30,033] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 11:15:30,033] [DEBUG] [_device_runtime_state_machine.py::163] Getting Edge Cluster address from CFC
+[2025-07-07 11:15:30,046] [DEBUG] [_cognit_frontend_client.py::151] Response from get_ECFE: [{'ID': 0, 'NAME': 'default', 'HOSTS': [1, 2], 'DATASTORES': [0, 1, 2], 'VNETS': [0, 4, 5], 'TEMPLATE': {'EDGE_CLUSTER_FRONTEND': 'http://172.21.0.1:1339', 'GEOLOCATION': '40.4168,-3.7038'}}]
+[2025-07-07 11:15:30,046] [DEBUG] [_cognit_frontend_client.py::155] Item in response: {'ID': 0, 'NAME': 'default', 'HOSTS': [1, 2], 'DATASTORES': [0, 1, 2], 'VNETS': [0, 4, 5], 'TEMPLATE': {'EDGE_CLUSTER_FRONTEND': 'http://172.21.0.1:1339', 'GEOLOCATION': '40.4168,-3.7038'}}
+[2025-07-07 11:15:30,047] [DEBUG] [_cognit_frontend_client.py::176] Edge Cluster Frontend Engine: http://172.21.0.1:1339
+[2025-07-07 11:15:30,047] [DEBUG] [_cognit_frontend_client.py::238] Max latency is not activated, returning first Edge Cluster Frontend Engine: http://172.21.0.1:1339
+[2025-07-07 11:15:30,097] [INFO] [_sm_handler.py::43] Current state: get_ecf_address
+[2025-07-07 11:15:30,098] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 11:15:30,098] [DEBUG] [_device_runtime_state_machine.py::258] Number of attempts getting Edge Cluster address: 1
+[2025-07-07 11:15:30,098] [DEBUG] [_device_runtime_state_machine.py::238] Edge Cluster Frontend connected: True
+[2025-07-07 11:15:30,098] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 11:15:30,099] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 11:15:30,099] [DEBUG] [_device_runtime_state_machine.py::238] Edge Cluster Frontend connected: True
+[2025-07-07 11:15:30,099] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 11:15:30,100] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 11:15:30,100] [DEBUG] [_cognit_frontend_client.py::378] Uploading function: LANG=<FunctionLanguage.PY: 'PY'> FC='gAWVrwIAAAAAAACMF2Nsb3VkcGlja2xlLmNsb3VkcGlja2xllIwOX21ha2VfZnVuY3Rpb26Uk5QoaACMDV9idWlsdGluX3R5cGWUk5SMCENvZGVUeXBllIWUUpQoSwFLAEsASwhLBktDQ3BkAWQAbAB9AWQBZABsAX0CZAFkAGwCfQN8AaAAoQB8ABcAfQRkAX0FfAGgAKEAfARrAHI2fAOgAqEAfQZ0A2QCgwFEAF0NfQd8BXwCoAR8BmQDEwB8BhcAoQE3AH0FcSJ8AaAAoQB8BGsAcxp8BVMAlChOSwBN6ANLAnSUKIwEdGltZZSMBG1hdGiUjAZyYW5kb22UjAVyYW5nZZSMBHNxcnSUdJQojAhkdXJhdGlvbpRoCmgLaAyMCGVuZF90aW1llIwGcmVzdWx0lIwBeJSMAV+UdJSMOC92YXIvbGliL29uZS9DT0dOSVQvY29nbml0LWNsaWVudC9leGFtcGxlcy9zdHJlc3NfY3B1LnB5lIwGc3RyZXNzlEsHQxYIAQgBCAEMAgQBDAIIAQwBGAEM/QQElCkpdJRSlH2UTk5OdJRSlIwcY2xvdWRwaWNrbGUuY2xvdWRwaWNrbGVfZmFzdJSMEl9mdW5jdGlvbl9zZXRzdGF0ZZSTlGgdfZR9lCiMCF9fbmFtZV9flGgXjAxfX3F1YWxuYW1lX1+UaBeMD19fYW5ub3RhdGlvbnNfX5R9lGgQjAhidWlsdGluc5SMA2ludJSTlHOMDl9fa3dkZWZhdWx0c19flE6MDF9fZGVmYXVsdHNfX5ROjApfX21vZHVsZV9flIwIX19tYWluX1+UjAdfX2RvY19flE6MC19fY2xvc3VyZV9flE6MF19jbG91ZHBpY2tsZV9zdWJtb2R1bGVzlF2UjAtfX2dsb2JhbHNfX5R9lHWGlIZSMC4=' FC_HASH='96016e628bb8ea6ebb2aa8a49ba688a0cdd844a24545a1e08915ecaa4c3bb823'
+[2025-07-07 11:15:30,107] [DEBUG] [_cognit_frontend_client.py::360] Function uploaded with ID: 254
+[2025-07-07 11:15:30,107] [DEBUG] [_edge_cluster_frontend_client.py::51] Execute function with ID 254
+[2025-07-07 11:21:32,869] [DEBUG] [_cognit_frontend_client.py::252] Requesting token for oneadmin
+[2025-07-07 11:21:32,877] [DEBUG] [_device_runtime_state_machine.py::118] Token: EtEBCmcKCG9uZWFkbWluCghwYXNzd29yZAoQYjUzZDlkNDhhODBjZjA0ZRgDIgkKBwgKEgMYgAgiCgoICIEIEgMYgggyJgokCgIIGxIGCAUSAggFGhYKBAoCCAUKCAoGIJzGs8MGCgQaAggAEiQIABIg7M0x6iCvkZTxBdpfGBs41EruRzxtj8_KLNeqbSEoeOkaQN945JoUhvxgRl-3rZFpy4YxH9ZC8RTd_ySr6aZsw0TRDJce1lCGWZOU8A5MVfrDaj-JFnT4o81a9jmMyjZFEgEiIgogBhLc3zGazTMnS0AORYL8FndbivACLxd5O86_D9t5_FI=
+[2025-07-07 11:21:32,878] [INFO] [device_runtime.py::83] DeviceRuntime initialized
+[2025-07-07 11:21:32,878] [DEBUG] [device_runtime.py::187] Function added to the queue
+[2025-07-07 11:21:32,878] [INFO] [_sm_handler.py::43] Current state: init
+[2025-07-07 11:21:32,879] [DEBUG] [_device_runtime_state_machine.py::128] SM: Setting sm.token to cfc token
+[2025-07-07 11:21:32,879] [DEBUG] [_device_runtime_state_machine.py::135] Uploading requirements: FLAVOUR='Nature' MAX_LATENCY=None MAX_FUNCTION_EXECUTION_TIME=None MIN_ENERGY_RENEWABLE_USAGE=None GEOLOCATION=Geolocation(latitude=43.05, longitude=-2.53)
+[2025-07-07 11:21:32,880] [DEBUG] [_cognit_frontend_client.py::80] Max latency is not activated, setting is_max_latency_activated to False
+[2025-07-07 11:21:32,880] [DEBUG] [_cognit_frontend_client.py::91] Application requirements do not exist, creating them at http://localhost:1338/v1/app_requirements
+[2025-07-07 11:21:32,936] [INFO] [_sm_handler.py::43] Current state: send_init_request
+[2025-07-07 11:21:32,936] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 11:21:32,936] [DEBUG] [_device_runtime_state_machine.py::253] Requirements uploaded: True
+[2025-07-07 11:21:32,937] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 11:21:32,937] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 11:21:32,937] [DEBUG] [_device_runtime_state_machine.py::253] Requirements uploaded: True
+[2025-07-07 11:21:32,938] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 11:21:32,938] [DEBUG] [_device_runtime_state_machine.py::163] Getting Edge Cluster address from CFC
+[2025-07-07 11:21:32,950] [DEBUG] [_cognit_frontend_client.py::151] Response from get_ECFE: [{'ID': 0, 'NAME': 'default', 'HOSTS': [1, 2], 'DATASTORES': [0, 1, 2], 'VNETS': [0, 4, 5], 'TEMPLATE': {'EDGE_CLUSTER_FRONTEND': 'http://172.21.0.1:1339', 'GEOLOCATION': '40.4168,-3.7038'}}]
+[2025-07-07 11:21:32,951] [DEBUG] [_cognit_frontend_client.py::155] Item in response: {'ID': 0, 'NAME': 'default', 'HOSTS': [1, 2], 'DATASTORES': [0, 1, 2], 'VNETS': [0, 4, 5], 'TEMPLATE': {'EDGE_CLUSTER_FRONTEND': 'http://172.21.0.1:1339', 'GEOLOCATION': '40.4168,-3.7038'}}
+[2025-07-07 11:21:32,951] [DEBUG] [_cognit_frontend_client.py::176] Edge Cluster Frontend Engine: http://172.21.0.1:1339
+[2025-07-07 11:21:32,952] [DEBUG] [_cognit_frontend_client.py::238] Max latency is not activated, returning first Edge Cluster Frontend Engine: http://172.21.0.1:1339
+[2025-07-07 11:21:33,002] [INFO] [_sm_handler.py::43] Current state: get_ecf_address
+[2025-07-07 11:21:33,002] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 11:21:33,002] [DEBUG] [_device_runtime_state_machine.py::258] Number of attempts getting Edge Cluster address: 1
+[2025-07-07 11:21:33,003] [DEBUG] [_device_runtime_state_machine.py::238] Edge Cluster Frontend connected: True
+[2025-07-07 11:21:33,003] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 11:21:33,003] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 11:21:33,004] [DEBUG] [_device_runtime_state_machine.py::238] Edge Cluster Frontend connected: True
+[2025-07-07 11:21:33,004] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 11:21:33,004] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 11:21:33,005] [DEBUG] [_cognit_frontend_client.py::378] Uploading function: LANG=<FunctionLanguage.PY: 'PY'> FC='gAWVrwIAAAAAAACMF2Nsb3VkcGlja2xlLmNsb3VkcGlja2xllIwOX21ha2VfZnVuY3Rpb26Uk5QoaACMDV9idWlsdGluX3R5cGWUk5SMCENvZGVUeXBllIWUUpQoSwFLAEsASwhLBktDQ3BkAWQAbAB9AWQBZABsAX0CZAFkAGwCfQN8AaAAoQB8ABcAfQRkAX0FfAGgAKEAfARrAHI2fAOgAqEAfQZ0A2QCgwFEAF0NfQd8BXwCoAR8BmQDEwB8BhcAoQE3AH0FcSJ8AaAAoQB8BGsAcxp8BVMAlChOSwBN6ANLAnSUKIwEdGltZZSMBG1hdGiUjAZyYW5kb22UjAVyYW5nZZSMBHNxcnSUdJQojAhkdXJhdGlvbpRoCmgLaAyMCGVuZF90aW1llIwGcmVzdWx0lIwBeJSMAV+UdJSMOC92YXIvbGliL29uZS9DT0dOSVQvY29nbml0LWNsaWVudC9leGFtcGxlcy9zdHJlc3NfY3B1LnB5lIwGc3RyZXNzlEsHQxYIAQgBCAEMAgQBDAIIAQwBGAEM/QQElCkpdJRSlH2UTk5OdJRSlIwcY2xvdWRwaWNrbGUuY2xvdWRwaWNrbGVfZmFzdJSMEl9mdW5jdGlvbl9zZXRzdGF0ZZSTlGgdfZR9lCiMCF9fbmFtZV9flGgXjAxfX3F1YWxuYW1lX1+UaBeMD19fYW5ub3RhdGlvbnNfX5R9lGgQjAhidWlsdGluc5SMA2ludJSTlHOMDl9fa3dkZWZhdWx0c19flE6MDF9fZGVmYXVsdHNfX5ROjApfX21vZHVsZV9flIwIX19tYWluX1+UjAdfX2RvY19flE6MC19fY2xvc3VyZV9flE6MF19jbG91ZHBpY2tsZV9zdWJtb2R1bGVzlF2UjAtfX2dsb2JhbHNfX5R9lHWGlIZSMC4=' FC_HASH='96016e628bb8ea6ebb2aa8a49ba688a0cdd844a24545a1e08915ecaa4c3bb823'
+[2025-07-07 11:21:33,011] [DEBUG] [_cognit_frontend_client.py::360] Function uploaded with ID: 254
+[2025-07-07 11:21:33,012] [DEBUG] [_edge_cluster_frontend_client.py::51] Execute function with ID 254
+[2025-07-07 11:22:25,404] [DEBUG] [_cognit_frontend_client.py::252] Requesting token for oneadmin
+[2025-07-07 11:22:25,412] [DEBUG] [_device_runtime_state_machine.py::118] Token: EtEBCmcKCG9uZWFkbWluCghwYXNzd29yZAoQYjUzZDlkNDhhODBjZjA0ZRgDIgkKBwgKEgMYgAgiCgoICIEIEgMYgggyJgokCgIIGxIGCAUSAggFGhYKBAoCCAUKCAoGINHGs8MGCgQaAggAEiQIABIgqbma-mO-yZtcCa5jBHzr6fnH6T8uutcCo7GDR2fEwjYaQEUHhyZf6HiGWzYg5rn9XSQXqj2aofemn_GvwlF7wKh8S9Bj2X5688rpRtOXP_ObBACAE90w9AwXNJkMsHT5zA8iIgog6HsQ1IvO8LB3my7RNEqdmgGr-dzRM4f6eoG16I1Ra4U=
+[2025-07-07 11:22:25,412] [INFO] [device_runtime.py::83] DeviceRuntime initialized
+[2025-07-07 11:22:25,413] [DEBUG] [device_runtime.py::187] Function added to the queue
+[2025-07-07 11:22:25,413] [INFO] [_sm_handler.py::43] Current state: init
+[2025-07-07 11:22:25,413] [DEBUG] [_device_runtime_state_machine.py::128] SM: Setting sm.token to cfc token
+[2025-07-07 11:22:25,414] [DEBUG] [_device_runtime_state_machine.py::135] Uploading requirements: FLAVOUR='Nature' MAX_LATENCY=None MAX_FUNCTION_EXECUTION_TIME=None MIN_ENERGY_RENEWABLE_USAGE=None GEOLOCATION=Geolocation(latitude=43.05, longitude=-2.53)
+[2025-07-07 11:22:25,414] [DEBUG] [_cognit_frontend_client.py::80] Max latency is not activated, setting is_max_latency_activated to False
+[2025-07-07 11:22:25,415] [DEBUG] [_cognit_frontend_client.py::91] Application requirements do not exist, creating them at http://localhost:1338/v1/app_requirements
+[2025-07-07 11:22:25,471] [INFO] [_sm_handler.py::43] Current state: send_init_request
+[2025-07-07 11:22:25,471] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 11:22:25,471] [DEBUG] [_device_runtime_state_machine.py::253] Requirements uploaded: True
+[2025-07-07 11:22:25,471] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 11:22:25,472] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 11:22:25,472] [DEBUG] [_device_runtime_state_machine.py::253] Requirements uploaded: True
+[2025-07-07 11:22:25,473] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 11:22:25,473] [DEBUG] [_device_runtime_state_machine.py::163] Getting Edge Cluster address from CFC
+[2025-07-07 11:22:25,485] [DEBUG] [_cognit_frontend_client.py::151] Response from get_ECFE: [{'ID': 0, 'NAME': 'default', 'HOSTS': [1, 2], 'DATASTORES': [0, 1, 2], 'VNETS': [0, 4, 5], 'TEMPLATE': {'EDGE_CLUSTER_FRONTEND': 'http://172.21.0.1:1339', 'GEOLOCATION': '40.4168,-3.7038'}}]
+[2025-07-07 11:22:25,485] [DEBUG] [_cognit_frontend_client.py::155] Item in response: {'ID': 0, 'NAME': 'default', 'HOSTS': [1, 2], 'DATASTORES': [0, 1, 2], 'VNETS': [0, 4, 5], 'TEMPLATE': {'EDGE_CLUSTER_FRONTEND': 'http://172.21.0.1:1339', 'GEOLOCATION': '40.4168,-3.7038'}}
+[2025-07-07 11:22:25,486] [DEBUG] [_cognit_frontend_client.py::176] Edge Cluster Frontend Engine: http://172.21.0.1:1339
+[2025-07-07 11:22:25,486] [DEBUG] [_cognit_frontend_client.py::238] Max latency is not activated, returning first Edge Cluster Frontend Engine: http://172.21.0.1:1339
+[2025-07-07 11:22:25,537] [INFO] [_sm_handler.py::43] Current state: get_ecf_address
+[2025-07-07 11:22:25,537] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 11:22:25,537] [DEBUG] [_device_runtime_state_machine.py::258] Number of attempts getting Edge Cluster address: 1
+[2025-07-07 11:22:25,538] [DEBUG] [_device_runtime_state_machine.py::238] Edge Cluster Frontend connected: True
+[2025-07-07 11:22:25,538] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 11:22:25,538] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 11:22:25,538] [DEBUG] [_device_runtime_state_machine.py::238] Edge Cluster Frontend connected: True
+[2025-07-07 11:22:25,539] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 11:22:25,539] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 11:22:25,540] [DEBUG] [_cognit_frontend_client.py::378] Uploading function: LANG=<FunctionLanguage.PY: 'PY'> FC='gAWVrwIAAAAAAACMF2Nsb3VkcGlja2xlLmNsb3VkcGlja2xllIwOX21ha2VfZnVuY3Rpb26Uk5QoaACMDV9idWlsdGluX3R5cGWUk5SMCENvZGVUeXBllIWUUpQoSwFLAEsASwhLBktDQ3BkAWQAbAB9AWQBZABsAX0CZAFkAGwCfQN8AaAAoQB8ABcAfQRkAX0FfAGgAKEAfARrAHI2fAOgAqEAfQZ0A2QCgwFEAF0NfQd8BXwCoAR8BmQDEwB8BhcAoQE3AH0FcSJ8AaAAoQB8BGsAcxp8BVMAlChOSwBN6ANLAnSUKIwEdGltZZSMBG1hdGiUjAZyYW5kb22UjAVyYW5nZZSMBHNxcnSUdJQojAhkdXJhdGlvbpRoCmgLaAyMCGVuZF90aW1llIwGcmVzdWx0lIwBeJSMAV+UdJSMOC92YXIvbGliL29uZS9DT0dOSVQvY29nbml0LWNsaWVudC9leGFtcGxlcy9zdHJlc3NfY3B1LnB5lIwGc3RyZXNzlEsHQxYIAQgBCAEMAgQBDAIIAQwBGAEM/QQElCkpdJRSlH2UTk5OdJRSlIwcY2xvdWRwaWNrbGUuY2xvdWRwaWNrbGVfZmFzdJSMEl9mdW5jdGlvbl9zZXRzdGF0ZZSTlGgdfZR9lCiMCF9fbmFtZV9flGgXjAxfX3F1YWxuYW1lX1+UaBeMD19fYW5ub3RhdGlvbnNfX5R9lGgQjAhidWlsdGluc5SMA2ludJSTlHOMDl9fa3dkZWZhdWx0c19flE6MDF9fZGVmYXVsdHNfX5ROjApfX21vZHVsZV9flIwIX19tYWluX1+UjAdfX2RvY19flE6MC19fY2xvc3VyZV9flE6MF19jbG91ZHBpY2tsZV9zdWJtb2R1bGVzlF2UjAtfX2dsb2JhbHNfX5R9lHWGlIZSMC4=' FC_HASH='96016e628bb8ea6ebb2aa8a49ba688a0cdd844a24545a1e08915ecaa4c3bb823'
+[2025-07-07 11:22:25,545] [DEBUG] [_cognit_frontend_client.py::360] Function uploaded with ID: 254
+[2025-07-07 11:22:25,545] [DEBUG] [_edge_cluster_frontend_client.py::51] Execute function with ID 254
+[2025-07-07 11:23:07,340] [DEBUG] [_cognit_frontend_client.py::252] Requesting token for oneadmin
+[2025-07-07 11:23:07,346] [DEBUG] [_device_runtime_state_machine.py::118] Token: EtEBCmcKCG9uZWFkbWluCghwYXNzd29yZAoQYjUzZDlkNDhhODBjZjA0ZRgDIgkKBwgKEgMYgAgiCgoICIEIEgMYgggyJgokCgIIGxIGCAUSAggFGhYKBAoCCAUKCAoGIPvGs8MGCgQaAggAEiQIABIgYonGiggsJds6cLVH3UybKSCkfHqy23vKqbrTIdEfMgMaQM4fnSX81ByO2kyAx_yeOAH9lNU8nKxkRUcm_hXGRm_22bkZzwA29rqMI6ull_P1P24vK0J84XFMlpEmGyMx0wAiIgog8kJhMUGnOd60OgMug38Ag9t74d30YnGGMbsaIRGxChA=
+[2025-07-07 11:23:07,347] [INFO] [_sm_handler.py::43] Current state: init
+[2025-07-07 11:23:07,347] [INFO] [device_runtime.py::83] DeviceRuntime initialized
+[2025-07-07 11:23:07,347] [DEBUG] [device_runtime.py::187] Function added to the queue
+[2025-07-07 11:23:07,348] [DEBUG] [_device_runtime_state_machine.py::128] SM: Setting sm.token to cfc token
+[2025-07-07 11:23:07,348] [DEBUG] [_device_runtime_state_machine.py::135] Uploading requirements: FLAVOUR='Nature' MAX_LATENCY=None MAX_FUNCTION_EXECUTION_TIME=None MIN_ENERGY_RENEWABLE_USAGE=None GEOLOCATION=Geolocation(latitude=43.05, longitude=-2.53)
+[2025-07-07 11:23:07,348] [DEBUG] [_cognit_frontend_client.py::80] Max latency is not activated, setting is_max_latency_activated to False
+[2025-07-07 11:23:07,349] [DEBUG] [_cognit_frontend_client.py::91] Application requirements do not exist, creating them at http://localhost:1338/v1/app_requirements
+[2025-07-07 11:23:07,405] [INFO] [_sm_handler.py::43] Current state: send_init_request
+[2025-07-07 11:23:07,405] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 11:23:07,405] [DEBUG] [_device_runtime_state_machine.py::253] Requirements uploaded: True
+[2025-07-07 11:23:07,406] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 11:23:07,406] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 11:23:07,406] [DEBUG] [_device_runtime_state_machine.py::253] Requirements uploaded: True
+[2025-07-07 11:23:07,407] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 11:23:07,407] [DEBUG] [_device_runtime_state_machine.py::163] Getting Edge Cluster address from CFC
+[2025-07-07 11:23:07,420] [DEBUG] [_cognit_frontend_client.py::151] Response from get_ECFE: [{'ID': 0, 'NAME': 'default', 'HOSTS': [1, 2], 'DATASTORES': [0, 1, 2], 'VNETS': [0, 4, 5], 'TEMPLATE': {'EDGE_CLUSTER_FRONTEND': 'http://172.21.0.1:1339', 'GEOLOCATION': '40.4168,-3.7038'}}]
+[2025-07-07 11:23:07,421] [DEBUG] [_cognit_frontend_client.py::155] Item in response: {'ID': 0, 'NAME': 'default', 'HOSTS': [1, 2], 'DATASTORES': [0, 1, 2], 'VNETS': [0, 4, 5], 'TEMPLATE': {'EDGE_CLUSTER_FRONTEND': 'http://172.21.0.1:1339', 'GEOLOCATION': '40.4168,-3.7038'}}
+[2025-07-07 11:23:07,421] [DEBUG] [_cognit_frontend_client.py::176] Edge Cluster Frontend Engine: http://172.21.0.1:1339
+[2025-07-07 11:23:07,421] [DEBUG] [_cognit_frontend_client.py::238] Max latency is not activated, returning first Edge Cluster Frontend Engine: http://172.21.0.1:1339
+[2025-07-07 11:23:07,472] [INFO] [_sm_handler.py::43] Current state: get_ecf_address
+[2025-07-07 11:23:07,472] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 11:23:07,472] [DEBUG] [_device_runtime_state_machine.py::258] Number of attempts getting Edge Cluster address: 1
+[2025-07-07 11:23:07,473] [DEBUG] [_device_runtime_state_machine.py::238] Edge Cluster Frontend connected: True
+[2025-07-07 11:23:07,473] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 11:23:07,473] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 11:23:07,473] [DEBUG] [_device_runtime_state_machine.py::238] Edge Cluster Frontend connected: True
+[2025-07-07 11:23:07,474] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 11:23:07,474] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 11:23:07,475] [DEBUG] [_cognit_frontend_client.py::378] Uploading function: LANG=<FunctionLanguage.PY: 'PY'> FC='gAWVrwIAAAAAAACMF2Nsb3VkcGlja2xlLmNsb3VkcGlja2xllIwOX21ha2VfZnVuY3Rpb26Uk5QoaACMDV9idWlsdGluX3R5cGWUk5SMCENvZGVUeXBllIWUUpQoSwFLAEsASwhLBktDQ3BkAWQAbAB9AWQBZABsAX0CZAFkAGwCfQN8AaAAoQB8ABcAfQRkAX0FfAGgAKEAfARrAHI2fAOgAqEAfQZ0A2QCgwFEAF0NfQd8BXwCoAR8BmQDEwB8BhcAoQE3AH0FcSJ8AaAAoQB8BGsAcxp8BVMAlChOSwBN6ANLAnSUKIwEdGltZZSMBG1hdGiUjAZyYW5kb22UjAVyYW5nZZSMBHNxcnSUdJQojAhkdXJhdGlvbpRoCmgLaAyMCGVuZF90aW1llIwGcmVzdWx0lIwBeJSMAV+UdJSMOC92YXIvbGliL29uZS9DT0dOSVQvY29nbml0LWNsaWVudC9leGFtcGxlcy9zdHJlc3NfY3B1LnB5lIwGc3RyZXNzlEsHQxYIAQgBCAEMAgQBDAIIAQwBGAEM/QQElCkpdJRSlH2UTk5OdJRSlIwcY2xvdWRwaWNrbGUuY2xvdWRwaWNrbGVfZmFzdJSMEl9mdW5jdGlvbl9zZXRzdGF0ZZSTlGgdfZR9lCiMCF9fbmFtZV9flGgXjAxfX3F1YWxuYW1lX1+UaBeMD19fYW5ub3RhdGlvbnNfX5R9lGgQjAhidWlsdGluc5SMA2ludJSTlHOMDl9fa3dkZWZhdWx0c19flE6MDF9fZGVmYXVsdHNfX5ROjApfX21vZHVsZV9flIwIX19tYWluX1+UjAdfX2RvY19flE6MC19fY2xvc3VyZV9flE6MF19jbG91ZHBpY2tsZV9zdWJtb2R1bGVzlF2UjAtfX2dsb2JhbHNfX5R9lHWGlIZSMC4=' FC_HASH='96016e628bb8ea6ebb2aa8a49ba688a0cdd844a24545a1e08915ecaa4c3bb823'
+[2025-07-07 11:23:07,481] [DEBUG] [_cognit_frontend_client.py::360] Function uploaded with ID: 254
+[2025-07-07 11:23:07,482] [DEBUG] [_edge_cluster_frontend_client.py::51] Execute function with ID 254
+[2025-07-07 11:26:55,686] [DEBUG] [_cognit_frontend_client.py::252] Requesting token for oneadmin
+[2025-07-07 11:26:55,693] [DEBUG] [_device_runtime_state_machine.py::118] Token: EtEBCmcKCG9uZWFkbWluCghwYXNzd29yZAoQYjUzZDlkNDhhODBjZjA0ZRgDIgkKBwgKEgMYgAgiCgoICIEIEgMYgggyJgokCgIIGxIGCAUSAggFGhYKBAoCCAUKCAoGIN_Is8MGCgQaAggAEiQIABIgW2cqfuCK_edxN8yYSTlQCTes47PJQlCic90Kk-QJ4SEaQDCwcixVPjhddPDAya6EvLWuhxDOcl2YMXDK91LKpPJoX4Q-0ku3qehFUADui-UtSONvLTvzxGPtY3T7HE7A-w0iIgog5IJGXYgnOjLR0Pg3MOExhBeSX_wxeox13VXAL0TY-Fg=
+[2025-07-07 11:26:55,693] [INFO] [_sm_handler.py::43] Current state: init
+[2025-07-07 11:26:55,693] [INFO] [device_runtime.py::83] DeviceRuntime initialized
+[2025-07-07 11:26:55,694] [DEBUG] [device_runtime.py::187] Function added to the queue
+[2025-07-07 11:26:55,694] [DEBUG] [_device_runtime_state_machine.py::128] SM: Setting sm.token to cfc token
+[2025-07-07 11:26:55,695] [DEBUG] [_device_runtime_state_machine.py::135] Uploading requirements: FLAVOUR='Nature' MAX_LATENCY=None MAX_FUNCTION_EXECUTION_TIME=None MIN_ENERGY_RENEWABLE_USAGE=None GEOLOCATION=Geolocation(latitude=43.05, longitude=-2.53)
+[2025-07-07 11:26:55,695] [DEBUG] [_cognit_frontend_client.py::80] Max latency is not activated, setting is_max_latency_activated to False
+[2025-07-07 11:26:55,695] [DEBUG] [_cognit_frontend_client.py::91] Application requirements do not exist, creating them at http://localhost:1338/v1/app_requirements
+[2025-07-07 11:26:55,750] [INFO] [_sm_handler.py::43] Current state: send_init_request
+[2025-07-07 11:26:55,751] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 11:26:55,751] [DEBUG] [_device_runtime_state_machine.py::253] Requirements uploaded: True
+[2025-07-07 11:26:55,751] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 11:26:55,752] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 11:26:55,752] [DEBUG] [_device_runtime_state_machine.py::253] Requirements uploaded: True
+[2025-07-07 11:26:55,752] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 11:26:55,753] [DEBUG] [_device_runtime_state_machine.py::163] Getting Edge Cluster address from CFC
+[2025-07-07 11:26:55,765] [DEBUG] [_cognit_frontend_client.py::151] Response from get_ECFE: [{'ID': 0, 'NAME': 'default', 'HOSTS': [1, 2], 'DATASTORES': [0, 1, 2], 'VNETS': [0, 4, 5], 'TEMPLATE': {'EDGE_CLUSTER_FRONTEND': 'http://172.21.0.1:1339', 'GEOLOCATION': '40.4168,-3.7038'}}]
+[2025-07-07 11:26:55,766] [DEBUG] [_cognit_frontend_client.py::155] Item in response: {'ID': 0, 'NAME': 'default', 'HOSTS': [1, 2], 'DATASTORES': [0, 1, 2], 'VNETS': [0, 4, 5], 'TEMPLATE': {'EDGE_CLUSTER_FRONTEND': 'http://172.21.0.1:1339', 'GEOLOCATION': '40.4168,-3.7038'}}
+[2025-07-07 11:26:55,766] [DEBUG] [_cognit_frontend_client.py::176] Edge Cluster Frontend Engine: http://172.21.0.1:1339
+[2025-07-07 11:26:55,766] [DEBUG] [_cognit_frontend_client.py::238] Max latency is not activated, returning first Edge Cluster Frontend Engine: http://172.21.0.1:1339
+[2025-07-07 11:26:55,817] [INFO] [_sm_handler.py::43] Current state: get_ecf_address
+[2025-07-07 11:26:55,817] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 11:26:55,817] [DEBUG] [_device_runtime_state_machine.py::258] Number of attempts getting Edge Cluster address: 1
+[2025-07-07 11:26:55,817] [DEBUG] [_device_runtime_state_machine.py::238] Edge Cluster Frontend connected: True
+[2025-07-07 11:26:55,818] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 11:26:55,818] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 11:26:55,818] [DEBUG] [_device_runtime_state_machine.py::238] Edge Cluster Frontend connected: True
+[2025-07-07 11:26:55,818] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 11:26:55,819] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 11:26:55,819] [DEBUG] [_cognit_frontend_client.py::378] Uploading function: LANG=<FunctionLanguage.PY: 'PY'> FC='gAWVrwIAAAAAAACMF2Nsb3VkcGlja2xlLmNsb3VkcGlja2xllIwOX21ha2VfZnVuY3Rpb26Uk5QoaACMDV9idWlsdGluX3R5cGWUk5SMCENvZGVUeXBllIWUUpQoSwFLAEsASwhLBktDQ3BkAWQAbAB9AWQBZABsAX0CZAFkAGwCfQN8AaAAoQB8ABcAfQRkAX0FfAGgAKEAfARrAHI2fAOgAqEAfQZ0A2QCgwFEAF0NfQd8BXwCoAR8BmQDEwB8BhcAoQE3AH0FcSJ8AaAAoQB8BGsAcxp8BVMAlChOSwBN6ANLAnSUKIwEdGltZZSMBG1hdGiUjAZyYW5kb22UjAVyYW5nZZSMBHNxcnSUdJQojAhkdXJhdGlvbpRoCmgLaAyMCGVuZF90aW1llIwGcmVzdWx0lIwBeJSMAV+UdJSMOC92YXIvbGliL29uZS9DT0dOSVQvY29nbml0LWNsaWVudC9leGFtcGxlcy9zdHJlc3NfY3B1LnB5lIwGc3RyZXNzlEsHQxYIAQgBCAEMAgQBDAIIAQwBGAEM/QQElCkpdJRSlH2UTk5OdJRSlIwcY2xvdWRwaWNrbGUuY2xvdWRwaWNrbGVfZmFzdJSMEl9mdW5jdGlvbl9zZXRzdGF0ZZSTlGgdfZR9lCiMCF9fbmFtZV9flGgXjAxfX3F1YWxuYW1lX1+UaBeMD19fYW5ub3RhdGlvbnNfX5R9lGgQjAhidWlsdGluc5SMA2ludJSTlHOMDl9fa3dkZWZhdWx0c19flE6MDF9fZGVmYXVsdHNfX5ROjApfX21vZHVsZV9flIwIX19tYWluX1+UjAdfX2RvY19flE6MC19fY2xvc3VyZV9flE6MF19jbG91ZHBpY2tsZV9zdWJtb2R1bGVzlF2UjAtfX2dsb2JhbHNfX5R9lHWGlIZSMC4=' FC_HASH='96016e628bb8ea6ebb2aa8a49ba688a0cdd844a24545a1e08915ecaa4c3bb823'
+[2025-07-07 11:26:55,826] [DEBUG] [_cognit_frontend_client.py::360] Function uploaded with ID: 254
+[2025-07-07 11:26:55,826] [DEBUG] [_edge_cluster_frontend_client.py::51] Execute function with ID 254
+[2025-07-07 11:29:10,941] [DEBUG] [_cognit_frontend_client.py::252] Requesting token for oneadmin
+[2025-07-07 11:29:10,948] [DEBUG] [_device_runtime_state_machine.py::118] Token: EtEBCmcKCG9uZWFkbWluCghwYXNzd29yZAoQYjUzZDlkNDhhODBjZjA0ZRgDIgkKBwgKEgMYgAgiCgoICIEIEgMYgggyJgokCgIIGxIGCAUSAggFGhYKBAoCCAUKCAoGIObJs8MGCgQaAggAEiQIABIgfepval2yDFUgVVf7j72t42h0ExYzi4ik5BjJ_z_1iM4aQAPuWse1I3xcZW8Bn41iWTUrpzhnINZLdhuEN3OlREUPANn-MP6JvQPStEeTM7xxGpRc9vML5zlZVMLoD1kz5w0iIgogzrc2kWMfh-CaH4BrdNVehwXluclgrfnfFRMBQ-qY_mE=
+[2025-07-07 11:29:10,949] [INFO] [device_runtime.py::83] DeviceRuntime initialized
+[2025-07-07 11:29:10,949] [DEBUG] [device_runtime.py::187] Function added to the queue
+[2025-07-07 11:29:10,949] [INFO] [_sm_handler.py::43] Current state: init
+[2025-07-07 11:29:10,950] [DEBUG] [_device_runtime_state_machine.py::128] SM: Setting sm.token to cfc token
+[2025-07-07 11:29:10,950] [DEBUG] [_device_runtime_state_machine.py::135] Uploading requirements: FLAVOUR='Nature' MAX_LATENCY=None MAX_FUNCTION_EXECUTION_TIME=None MIN_ENERGY_RENEWABLE_USAGE=None GEOLOCATION=Geolocation(latitude=43.05, longitude=-2.53)
+[2025-07-07 11:29:10,950] [DEBUG] [_cognit_frontend_client.py::80] Max latency is not activated, setting is_max_latency_activated to False
+[2025-07-07 11:29:10,951] [DEBUG] [_cognit_frontend_client.py::91] Application requirements do not exist, creating them at http://localhost:1338/v1/app_requirements
+[2025-07-07 11:29:11,007] [INFO] [_sm_handler.py::43] Current state: send_init_request
+[2025-07-07 11:29:11,008] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 11:29:11,008] [DEBUG] [_device_runtime_state_machine.py::253] Requirements uploaded: True
+[2025-07-07 11:29:11,008] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 11:29:11,009] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 11:29:11,009] [DEBUG] [_device_runtime_state_machine.py::253] Requirements uploaded: True
+[2025-07-07 11:29:11,009] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 11:29:11,010] [DEBUG] [_device_runtime_state_machine.py::163] Getting Edge Cluster address from CFC
+[2025-07-07 11:29:11,022] [DEBUG] [_cognit_frontend_client.py::151] Response from get_ECFE: [{'ID': 0, 'NAME': 'default', 'HOSTS': [1, 2], 'DATASTORES': [0, 1, 2], 'VNETS': [0, 4, 5], 'TEMPLATE': {'EDGE_CLUSTER_FRONTEND': 'http://172.21.0.1:1339', 'GEOLOCATION': '40.4168,-3.7038'}}]
+[2025-07-07 11:29:11,023] [DEBUG] [_cognit_frontend_client.py::155] Item in response: {'ID': 0, 'NAME': 'default', 'HOSTS': [1, 2], 'DATASTORES': [0, 1, 2], 'VNETS': [0, 4, 5], 'TEMPLATE': {'EDGE_CLUSTER_FRONTEND': 'http://172.21.0.1:1339', 'GEOLOCATION': '40.4168,-3.7038'}}
+[2025-07-07 11:29:11,023] [DEBUG] [_cognit_frontend_client.py::176] Edge Cluster Frontend Engine: http://172.21.0.1:1339
+[2025-07-07 11:29:11,024] [DEBUG] [_cognit_frontend_client.py::238] Max latency is not activated, returning first Edge Cluster Frontend Engine: http://172.21.0.1:1339
+[2025-07-07 11:29:11,074] [INFO] [_sm_handler.py::43] Current state: get_ecf_address
+[2025-07-07 11:29:11,074] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 11:29:11,074] [DEBUG] [_device_runtime_state_machine.py::258] Number of attempts getting Edge Cluster address: 1
+[2025-07-07 11:29:11,074] [DEBUG] [_device_runtime_state_machine.py::238] Edge Cluster Frontend connected: True
+[2025-07-07 11:29:11,075] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 11:29:11,075] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 11:29:11,075] [DEBUG] [_device_runtime_state_machine.py::238] Edge Cluster Frontend connected: True
+[2025-07-07 11:29:11,076] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 11:29:11,076] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 11:29:11,076] [DEBUG] [_cognit_frontend_client.py::378] Uploading function: LANG=<FunctionLanguage.PY: 'PY'> FC='gAWVrwIAAAAAAACMF2Nsb3VkcGlja2xlLmNsb3VkcGlja2xllIwOX21ha2VfZnVuY3Rpb26Uk5QoaACMDV9idWlsdGluX3R5cGWUk5SMCENvZGVUeXBllIWUUpQoSwFLAEsASwhLBktDQ3BkAWQAbAB9AWQBZABsAX0CZAFkAGwCfQN8AaAAoQB8ABcAfQRkAX0FfAGgAKEAfARrAHI2fAOgAqEAfQZ0A2QCgwFEAF0NfQd8BXwCoAR8BmQDEwB8BhcAoQE3AH0FcSJ8AaAAoQB8BGsAcxp8BVMAlChOSwBN6ANLAnSUKIwEdGltZZSMBG1hdGiUjAZyYW5kb22UjAVyYW5nZZSMBHNxcnSUdJQojAhkdXJhdGlvbpRoCmgLaAyMCGVuZF90aW1llIwGcmVzdWx0lIwBeJSMAV+UdJSMOC92YXIvbGliL29uZS9DT0dOSVQvY29nbml0LWNsaWVudC9leGFtcGxlcy9zdHJlc3NfY3B1LnB5lIwGc3RyZXNzlEsHQxYIAQgBCAEMAgQBDAIIAQwBGAEM/QQElCkpdJRSlH2UTk5OdJRSlIwcY2xvdWRwaWNrbGUuY2xvdWRwaWNrbGVfZmFzdJSMEl9mdW5jdGlvbl9zZXRzdGF0ZZSTlGgdfZR9lCiMCF9fbmFtZV9flGgXjAxfX3F1YWxuYW1lX1+UaBeMD19fYW5ub3RhdGlvbnNfX5R9lGgQjAhidWlsdGluc5SMA2ludJSTlHOMDl9fa3dkZWZhdWx0c19flE6MDF9fZGVmYXVsdHNfX5ROjApfX21vZHVsZV9flIwIX19tYWluX1+UjAdfX2RvY19flE6MC19fY2xvc3VyZV9flE6MF19jbG91ZHBpY2tsZV9zdWJtb2R1bGVzlF2UjAtfX2dsb2JhbHNfX5R9lHWGlIZSMC4=' FC_HASH='96016e628bb8ea6ebb2aa8a49ba688a0cdd844a24545a1e08915ecaa4c3bb823'
+[2025-07-07 11:29:11,082] [DEBUG] [_cognit_frontend_client.py::360] Function uploaded with ID: 254
+[2025-07-07 11:29:11,083] [DEBUG] [_edge_cluster_frontend_client.py::51] Execute function with ID 254
+[2025-07-07 11:29:50,970] [DEBUG] [_cognit_frontend_client.py::252] Requesting token for oneadmin
+[2025-07-07 11:29:50,979] [DEBUG] [_device_runtime_state_machine.py::118] Token: EtEBCmcKCG9uZWFkbWluCghwYXNzd29yZAoQYjUzZDlkNDhhODBjZjA0ZRgDIgkKBwgKEgMYgAgiCgoICIEIEgMYgggyJgokCgIIGxIGCAUSAggFGhYKBAoCCAUKCAoGII7Ks8MGCgQaAggAEiQIABIgKzviSGuv5KLGiHn2bzjbBmLtgTNmWS9FOGqrfipKjbgaQBOu0z9Nk7UU7ZW5YpogQT4elYyZX3XNqPSWMgoCZ5-mUDPI84vClNeS00tuHCOxxYuyLk3BJ3ncKhj-nc6frwUiIgog0peMs_KhIGNX_c817W1a6ZPL2fTs7bM3FQFITq2SgVE=
+[2025-07-07 11:29:50,979] [INFO] [device_runtime.py::83] DeviceRuntime initialized
+[2025-07-07 11:29:50,980] [DEBUG] [device_runtime.py::187] Function added to the queue
+[2025-07-07 11:29:50,980] [INFO] [_sm_handler.py::43] Current state: init
+[2025-07-07 11:29:50,981] [DEBUG] [_device_runtime_state_machine.py::128] SM: Setting sm.token to cfc token
+[2025-07-07 11:29:50,981] [DEBUG] [_device_runtime_state_machine.py::135] Uploading requirements: FLAVOUR='Nature' MAX_LATENCY=None MAX_FUNCTION_EXECUTION_TIME=None MIN_ENERGY_RENEWABLE_USAGE=None GEOLOCATION=Geolocation(latitude=43.05, longitude=-2.53)
+[2025-07-07 11:29:50,981] [DEBUG] [_cognit_frontend_client.py::80] Max latency is not activated, setting is_max_latency_activated to False
+[2025-07-07 11:29:50,982] [DEBUG] [_cognit_frontend_client.py::91] Application requirements do not exist, creating them at http://localhost:1338/v1/app_requirements
+[2025-07-07 11:29:51,038] [INFO] [_sm_handler.py::43] Current state: send_init_request
+[2025-07-07 11:29:51,039] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 11:29:51,039] [DEBUG] [_device_runtime_state_machine.py::253] Requirements uploaded: True
+[2025-07-07 11:29:51,039] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 11:29:51,039] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 11:29:51,040] [DEBUG] [_device_runtime_state_machine.py::253] Requirements uploaded: True
+[2025-07-07 11:29:51,040] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 11:29:51,040] [DEBUG] [_device_runtime_state_machine.py::163] Getting Edge Cluster address from CFC
+[2025-07-07 11:29:51,052] [DEBUG] [_cognit_frontend_client.py::151] Response from get_ECFE: [{'ID': 0, 'NAME': 'default', 'HOSTS': [1, 2], 'DATASTORES': [0, 1, 2], 'VNETS': [0, 4, 5], 'TEMPLATE': {'EDGE_CLUSTER_FRONTEND': 'http://172.21.0.1:1339', 'GEOLOCATION': '40.4168,-3.7038'}}]
+[2025-07-07 11:29:51,053] [DEBUG] [_cognit_frontend_client.py::155] Item in response: {'ID': 0, 'NAME': 'default', 'HOSTS': [1, 2], 'DATASTORES': [0, 1, 2], 'VNETS': [0, 4, 5], 'TEMPLATE': {'EDGE_CLUSTER_FRONTEND': 'http://172.21.0.1:1339', 'GEOLOCATION': '40.4168,-3.7038'}}
+[2025-07-07 11:29:51,053] [DEBUG] [_cognit_frontend_client.py::176] Edge Cluster Frontend Engine: http://172.21.0.1:1339
+[2025-07-07 11:29:51,054] [DEBUG] [_cognit_frontend_client.py::238] Max latency is not activated, returning first Edge Cluster Frontend Engine: http://172.21.0.1:1339
+[2025-07-07 11:29:51,104] [INFO] [_sm_handler.py::43] Current state: get_ecf_address
+[2025-07-07 11:29:51,105] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 11:29:51,105] [DEBUG] [_device_runtime_state_machine.py::258] Number of attempts getting Edge Cluster address: 1
+[2025-07-07 11:29:51,105] [DEBUG] [_device_runtime_state_machine.py::238] Edge Cluster Frontend connected: True
+[2025-07-07 11:29:51,105] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 11:29:51,106] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 11:29:51,106] [DEBUG] [_device_runtime_state_machine.py::238] Edge Cluster Frontend connected: True
+[2025-07-07 11:29:51,106] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 11:29:51,107] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 11:29:51,107] [DEBUG] [_cognit_frontend_client.py::378] Uploading function: LANG=<FunctionLanguage.PY: 'PY'> FC='gAWVrwIAAAAAAACMF2Nsb3VkcGlja2xlLmNsb3VkcGlja2xllIwOX21ha2VfZnVuY3Rpb26Uk5QoaACMDV9idWlsdGluX3R5cGWUk5SMCENvZGVUeXBllIWUUpQoSwFLAEsASwhLBktDQ3BkAWQAbAB9AWQBZABsAX0CZAFkAGwCfQN8AaAAoQB8ABcAfQRkAX0FfAGgAKEAfARrAHI2fAOgAqEAfQZ0A2QCgwFEAF0NfQd8BXwCoAR8BmQDEwB8BhcAoQE3AH0FcSJ8AaAAoQB8BGsAcxp8BVMAlChOSwBN6ANLAnSUKIwEdGltZZSMBG1hdGiUjAZyYW5kb22UjAVyYW5nZZSMBHNxcnSUdJQojAhkdXJhdGlvbpRoCmgLaAyMCGVuZF90aW1llIwGcmVzdWx0lIwBeJSMAV+UdJSMOC92YXIvbGliL29uZS9DT0dOSVQvY29nbml0LWNsaWVudC9leGFtcGxlcy9zdHJlc3NfY3B1LnB5lIwGc3RyZXNzlEsHQxYIAQgBCAEMAgQBDAIIAQwBGAEM/QQElCkpdJRSlH2UTk5OdJRSlIwcY2xvdWRwaWNrbGUuY2xvdWRwaWNrbGVfZmFzdJSMEl9mdW5jdGlvbl9zZXRzdGF0ZZSTlGgdfZR9lCiMCF9fbmFtZV9flGgXjAxfX3F1YWxuYW1lX1+UaBeMD19fYW5ub3RhdGlvbnNfX5R9lGgQjAhidWlsdGluc5SMA2ludJSTlHOMDl9fa3dkZWZhdWx0c19flE6MDF9fZGVmYXVsdHNfX5ROjApfX21vZHVsZV9flIwIX19tYWluX1+UjAdfX2RvY19flE6MC19fY2xvc3VyZV9flE6MF19jbG91ZHBpY2tsZV9zdWJtb2R1bGVzlF2UjAtfX2dsb2JhbHNfX5R9lHWGlIZSMC4=' FC_HASH='96016e628bb8ea6ebb2aa8a49ba688a0cdd844a24545a1e08915ecaa4c3bb823'
+[2025-07-07 11:29:51,113] [DEBUG] [_cognit_frontend_client.py::360] Function uploaded with ID: 254
+[2025-07-07 11:29:51,114] [DEBUG] [_edge_cluster_frontend_client.py::51] Execute function with ID 254
+[2025-07-07 11:31:00,668] [DEBUG] [_cognit_frontend_client.py::252] Requesting token for oneadmin
+[2025-07-07 11:31:00,676] [DEBUG] [_device_runtime_state_machine.py::118] Token: EtEBCmcKCG9uZWFkbWluCghwYXNzd29yZAoQYjUzZDlkNDhhODBjZjA0ZRgDIgkKBwgKEgMYgAgiCgoICIEIEgMYgggyJgokCgIIGxIGCAUSAggFGhYKBAoCCAUKCAoGINTKs8MGCgQaAggAEiQIABIgbDCkRxvGs5veIsgzt5ZntK13FOOTt2j4cIu9iSFKrzsaQPDROnFoSXX94s1HE1uUXRStVn0RLcVlv0txIgqbILdVXRv-AsADAy8CeHNEaY3VB31AvD3SsiRi9XGoxSTqZAciIgogEOMLpOx9wdvisiqty8ewiuh3329OpE-0g4DLNirhZv0=
+[2025-07-07 11:31:00,677] [INFO] [device_runtime.py::83] DeviceRuntime initialized
+[2025-07-07 11:31:00,677] [INFO] [_sm_handler.py::43] Current state: init
+[2025-07-07 11:31:00,677] [DEBUG] [device_runtime.py::187] Function added to the queue
+[2025-07-07 11:31:00,678] [DEBUG] [_device_runtime_state_machine.py::128] SM: Setting sm.token to cfc token
+[2025-07-07 11:31:00,678] [DEBUG] [_device_runtime_state_machine.py::135] Uploading requirements: FLAVOUR='Nature' MAX_LATENCY=None MAX_FUNCTION_EXECUTION_TIME=None MIN_ENERGY_RENEWABLE_USAGE=None GEOLOCATION=Geolocation(latitude=43.05, longitude=-2.53)
+[2025-07-07 11:31:00,678] [DEBUG] [_cognit_frontend_client.py::80] Max latency is not activated, setting is_max_latency_activated to False
+[2025-07-07 11:31:00,679] [DEBUG] [_cognit_frontend_client.py::91] Application requirements do not exist, creating them at http://localhost:1338/v1/app_requirements
+[2025-07-07 11:31:00,735] [INFO] [_sm_handler.py::43] Current state: send_init_request
+[2025-07-07 11:31:00,735] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 11:31:00,736] [DEBUG] [_device_runtime_state_machine.py::253] Requirements uploaded: True
+[2025-07-07 11:31:00,736] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 11:31:00,736] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 11:31:00,736] [DEBUG] [_device_runtime_state_machine.py::253] Requirements uploaded: True
+[2025-07-07 11:31:00,737] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 11:31:00,737] [DEBUG] [_device_runtime_state_machine.py::163] Getting Edge Cluster address from CFC
+[2025-07-07 11:31:00,751] [DEBUG] [_cognit_frontend_client.py::151] Response from get_ECFE: [{'ID': 0, 'NAME': 'default', 'HOSTS': [1, 2], 'DATASTORES': [0, 1, 2], 'VNETS': [0, 4, 5], 'TEMPLATE': {'EDGE_CLUSTER_FRONTEND': 'http://172.21.0.1:1339', 'GEOLOCATION': '40.4168,-3.7038'}}]
+[2025-07-07 11:31:00,752] [DEBUG] [_cognit_frontend_client.py::155] Item in response: {'ID': 0, 'NAME': 'default', 'HOSTS': [1, 2], 'DATASTORES': [0, 1, 2], 'VNETS': [0, 4, 5], 'TEMPLATE': {'EDGE_CLUSTER_FRONTEND': 'http://172.21.0.1:1339', 'GEOLOCATION': '40.4168,-3.7038'}}
+[2025-07-07 11:31:00,752] [DEBUG] [_cognit_frontend_client.py::176] Edge Cluster Frontend Engine: http://172.21.0.1:1339
+[2025-07-07 11:31:00,752] [DEBUG] [_cognit_frontend_client.py::238] Max latency is not activated, returning first Edge Cluster Frontend Engine: http://172.21.0.1:1339
+[2025-07-07 11:31:00,803] [INFO] [_sm_handler.py::43] Current state: get_ecf_address
+[2025-07-07 11:31:00,803] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 11:31:00,804] [DEBUG] [_device_runtime_state_machine.py::258] Number of attempts getting Edge Cluster address: 1
+[2025-07-07 11:31:00,804] [DEBUG] [_device_runtime_state_machine.py::238] Edge Cluster Frontend connected: True
+[2025-07-07 11:31:00,804] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 11:31:00,804] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 11:31:00,804] [DEBUG] [_device_runtime_state_machine.py::238] Edge Cluster Frontend connected: True
+[2025-07-07 11:31:00,805] [DEBUG] [_device_runtime_state_machine.py::233] Cognit Frontend Client connected: True
+[2025-07-07 11:31:00,805] [DEBUG] [_device_runtime_state_machine.py::264] Requirements changed: False
+[2025-07-07 11:31:00,806] [DEBUG] [_cognit_frontend_client.py::378] Uploading function: LANG=<FunctionLanguage.PY: 'PY'> FC='gAWVtgIAAAAAAACMF2Nsb3VkcGlja2xlLmNsb3VkcGlja2xllIwOX21ha2VfZnVuY3Rpb26Uk5QoaACMDV9idWlsdGluX3R5cGWUk5SMCENvZGVUeXBllIWUUpQoSwFLAEsASwhLBktDQ3BkAWQAbAB9AWQBZABsAX0CZAFkAGwCfQN8AaAAoQB8ABcAfQRkAX0FfAGgAKEAfARrAHI2fAOgAqEAfQZ0A2QCgwFEAF0NfQd8BXwCoAR8BmQDEwB8BhcAoQE3AH0FcSJ8AaAAoQB8BGsAcxp8BVMAlChOSwBN6ANLAnSUKIwEdGltZZSMBG1hdGiUjAZyYW5kb22UjAVyYW5nZZSMBHNxcnSUdJQojAhkdXJhdGlvbpRoCmgLaAyMCGVuZF90aW1llIwGcmVzdWx0lIwBeJSMAV+UdJSMPy92YXIvbGliL29uZS9DT0dOSVQvY29nbml0LWNsaWVudC1sb2N1c3QvZXhhbXBsZXMvc3RyZXNzX2NwdS5weZSMBnN0cmVzc5RLB0MWCAEIAQgBDAIEAQwCCAEMARgBDP0EBJQpKXSUUpR9lE5OTnSUUpSMHGNsb3VkcGlja2xlLmNsb3VkcGlja2xlX2Zhc3SUjBJfZnVuY3Rpb25fc2V0c3RhdGWUk5RoHX2UfZQojAhfX25hbWVfX5RoF4wMX19xdWFsbmFtZV9flGgXjA9fX2Fubm90YXRpb25zX1+UfZRoEIwIYnVpbHRpbnOUjANpbnSUk5RzjA5fX2t3ZGVmYXVsdHNfX5ROjAxfX2RlZmF1bHRzX1+UTowKX19tb2R1bGVfX5SMCF9fbWFpbl9flIwHX19kb2NfX5ROjAtfX2Nsb3N1cmVfX5ROjBdfY2xvdWRwaWNrbGVfc3VibW9kdWxlc5RdlIwLX19nbG9iYWxzX1+UfZR1hpSGUjAu' FC_HASH='96016e628bb8ea6ebb2aa8a49ba688a0cdd844a24545a1e08915ecaa4c3bb823'
+[2025-07-07 11:31:00,812] [DEBUG] [_cognit_frontend_client.py::360] Function uploaded with ID: 254
+[2025-07-07 11:31:00,812] [DEBUG] [_edge_cluster_frontend_client.py::51] Execute function with ID 254
